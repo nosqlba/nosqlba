@@ -20,12 +20,12 @@ jQuery(document).ready(function(){
   
   $('div.info-palestra-left').mouseenter(function(){
     var $this = $(this);
-    $this.popover({
+   /** $this.popover({
       placement: 'right',
       title: 'Descrição',
       content: $this.find('div.info-palestra-dados').html()
     });
-    $this.popover('show');
+    $this.popover('show'); **/
 
   }).mouseleave(function(){
     var $this = $(this);
