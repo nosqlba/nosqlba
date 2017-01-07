@@ -1,0 +1,1262 @@
+﻿<!DOCTYPE HTML>
+<!-- Hacks Condicionais para o IE6 - IE9 --> 
+<!--[if lt IE 7 ]> <html lang="pt-br" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="pt-br" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="pt-br" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="pt-br" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="pt-br" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Força o navegador a renderizar com o mecanismo mais atual do IE (também em Intranet) e no Chrome Frame 
+       Remova isso se você utiliza o arquivo .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="I2U Solucões e Projetos www.i2u.com.br">
+    <meta name="description" content="Conferência sobre as tecnolgoias em volta do NoSQL" /> 
+    <meta name="keywords" content="nosql, sql, rdms, sgbdr, banco de dados, database, not only sql, bahia, salvador, mongodb, couchdb, cassandra, neo4j, hipertable, bigtable, mysql, oracle, postgres, web, internet, solution, solução, soluções, solutions, app, webapp, application, applications, aplicativos, aplicativo, design, programação, programming, desenvolvimento, development, develop, developer" /> 
+    <meta name="copyright" content="&copy; Copyleft NoSQL BA" />
+    <meta name="google-site-verification" content="" />
+
+    <!--  Visualização de tela em Mobile (Otimizada) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoSQLBA - Conferência Baiana de NoSQL</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/rcarousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/botoes.css" />
+    <link type="text/css" rel="stylesheet" href="css/popover.css" />
+    <link type="text/css" rel="stylesheet" href="css/geral.css?1" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <style type="text/css">
+        .clear {
+          zoom: 1;
+          display: block;
+        }
+      </style>
+    <![endif]-->
+    <!-- Busca o jQuery de modo on-line. Se não encontrado, aponta para o arquivo local. -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.js"%3E%3C/script%3E'))</script>
+    <script type="text/javascript" src="js/selectivizr-min.js" type="text/javascript"></script> 
+    <script type="text/javascript" src="js/browser.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.rcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+
+  <body>
+
+    <a href="#" id="subir" class="default" title="Voltar ao topo">Subir</a>
+
+    <div class="aviso" id="aviso">
+      <p>
+        <strong>Obrigado</strong> a <strong>todos</strong> os participantes, pois o evento foi de alto nível de conhecimento. 
+        <br />
+        Que venha o próximo! Não esqueça de ver os slides e códigos na <a href="#programacao" title="ver Programação">Programação</a>.
+      </p>
+    </div>
+
+    <!-- Geral -->
+    <div id="geral">
+
+      <!-- Topo -->
+      <div id="topo">
+
+        <!-- Header -->
+        <div id="header">
+
+          <h1 title="NoSQLBA - Conferência Baiana de NoSQL">
+            NoSQLBA - Conferência Baiana de NoSQL
+          </h1>
+
+          <div id="local" title="1 e 2 de Junho na UNIRB - Campus Patamares">
+            1 e 2 de Junho na UNIRB - Campus Patamares
+          </div> <!-- Data e Local -->
+
+          <div id="menu-box" class="default">
+            
+            <!-- Menu -->
+            <ul id="menu">
+              <li class="o-que-e">
+                <a href="#o-que-e" title="O que é?">
+                  O que é?
+                </a>
+              </li>
+              <li class="programacao">
+                <a href="#programacao" title="Programação">
+                  Programação
+                </a>
+              </li>
+              <li class="palestrantes">
+                <a href="#palestrantes" title="Palestrantes">
+                  Palestrantes
+                </a>
+              </li>
+              <li class="inscricao">
+                <a href="http://eventos.apimenti.com.br/nosqlba/" title="Inscrição ( abrirá em uma nova janela )" target="_blank">
+                  Inscrição
+                </a>
+              </li>
+            </ul> <!-- Menu -->
+
+          </div> <!-- Menu Box -->
+
+          <div id="patrocinadores-carousel">
+
+            <h2>Patrocinadores</h2>
+
+            <div class="clear"></div>
+
+            <a href="javascript:;" id="ui-carousel-prev">
+              <span>prev</span>
+            </a>
+
+            <div id="carousel">
+              
+              <a href="http://aws.amazon.com/" target="_blank">
+                <img src="images/patrocinadores/amazon-web-services.png" alt="marca da Amazon Web Services" title="Amazon Web Services" height="45" />
+              </a>
+              
+              <a href="http://www.caelum.com.br" target="_blank">
+                <img src="images/patrocinadores/caelum.png" alt="marca da Caelum" title="Caelum" height="45" />
+              </a>
+              
+              <a href="http://www.globalcode.com.br" target="_blank">
+                <img src="images/patrocinadores/globalcode.png" alt="marca da Global Code" title="Global Code" height="45" />
+              </a>
+              
+              <a href="http://www.redhat.com" target="_blank">
+                <img src="images/patrocinadores/redhat.png" alt="marca da Redhat" title="Redhat" height="45" />
+              </a>
+
+              <a href="http://www.i2u.com.br" title="I2U Soluções e Projetos" target="_blank">
+                <img src="images/patrocinadores/i2u.png" alt="marca da I2U" title="I2U Soluções e Projetos" height="45" />
+              </a>
+              
+              <a href="#" title="Manager TI Consultoria em TIC">
+                <img src="images/patrocinadores/manager_ti.jpg" alt="marca da Manager TI" title="Manager TI Consultoria em TIC" height="70" />
+              </a>
+
+              <a href="http://www.schoolofnet.com" title="School of Net" target="_blank">
+                <img src="images/patrocinadores/schoolofnet.png" alt="marca da School of Net" title="School of Net" height="35" />
+              </a>
+
+              <a href="http://www.linguagil.com.br" title="Grupo LinguÁgil" target="_blank">
+                <img src="images/organizacao/linguagil.png" alt="marca da LinguÁgil" title="Grupo LinguÁgil" height="45" />
+              </a>
+
+              <a href="http://www.unirb.edu.br" title="UNIRB" target="_blank">
+                <img src="images/organizacao/unirb.gif" alt="marca da UNIRB" title="UNIRB" height="45" />
+              </a>
+
+              <a href="http://javabahia.blogspot.com" title="Grupo de Usuários Java da Bahia" target="_blank">
+                <img src="images/organizacao/javabahia.png" alt="marca da JavaBahia" title="Grupo de Usuários Java da Bahia" height="45" />
+              </a>
+
+              <a href="http://www.phpba.com.br" title="Grupo de Usuários PHP da Bahia" target="_blank">
+                <img src="images/organizacao/phpba.png" alt="marca da PHPBA" title="Grupo de Usuários PHP da Bahia" height="45" />
+              </a>
+
+              <a href="http://www.apimenti.com.br" title="Apimenti Coisas para internet" target="_blank">
+                <img src="images/organizacao/apimenti.jpg" alt="marca da Apimenti" title="Apimenti Coisas para internet" height="45" />
+              </a>
+
+            </div> <!-- Carousel -->
+
+            <a href="javascript:;" id="ui-carousel-next">
+              <span>next</span>
+            </a>
+
+          </div> <!-- Carousel de Patrocinadores -->
+          
+        </div><!-- Header -->
+
+      </div> <!-- Topo -->
+
+      <div class="clear"></div>
+
+      <div id="conteudo">
+
+        <div id="o-que-e">
+
+          <div class="espacador"></div>
+
+          <h2>O que é?</h2>
+
+          <div class="texto">
+
+            <p>
+              Os banco de Dados NOSQL (not only SQL) foram criados, principalmente, para resolver problemas com aplicações web que precisam operar com gigantescas cargas de dados além de poder escalar com grande facilidade. Esses tipos de banco de dados vem sendo usados com muita frequência em redes sociais como Twitter, Facebook, além de persistência em aplicações nas nuvens. Outro ponto importante a citar é a crescente adoção destas novas tecnologias, inclusive em mercados mais conservadores, tais como instituições financeiras e agências governamentais, seus motivos são diversos normalmente para solucionar problemas com flexibilidade, escalabilidade, latência e performance. Para demonstrar, compartilhar essas tecnologias foi criado o evento NOSQL-BA.
+            </p>
+
+            <h2 class="localizacao">Localização</h2>
+            
+            <div class="mapa">
+              <iframe width="570" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?q=unirb&amp;hl=pt-BR&amp;hq=unirb&amp;hnear=Salvador+-+Bahia&amp;t=m&amp;ie=UTF8&amp;cid=6442231572476141154&amp;ll=-12.943417,-38.393955&amp;spn=0.025095,0.051413&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.br/maps?q=unirb&amp;hl=pt-BR&amp;hq=unirb&amp;hnear=Salvador+-+Bahia&amp;t=m&amp;ie=UTF8&amp;cid=6442231572476141154&amp;ll=-12.943417,-38.393955&amp;spn=0.025095,0.051413&amp;z=14&amp;iwloc=A&amp;source=embed" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>
+            </div>
+            
+          </div> <!-- Texto -->
+
+          <div class="patrocinio-info">
+
+            <h3>Seja um patrocinador.</h3>
+
+            <a href="./nosql-bahia.pdf" target="_blank" title="Baixar proposta ( PDF )" class="botao_enviar">Baixar proposta</a>
+
+            <br /><br /><br /><br /><br /><br /><br />
+
+            <h3>Contatos</h3>
+
+            <p>
+              <a href="mailto:contato@nosqlba.com.br" title="Entre em contato">
+                contato@nosqlba.com.br
+              </a>
+              <br />
+              Otávio - 9267.2795
+              <br />
+              Silas - 9155.0533
+            </p>
+
+            <h3>Hotéis</h3>
+
+            <p>
+              <strong>Onde os palestrantes ficarão: </strong>
+              <br />
+              <a href="http://www.solarmarhotel.com.br/" title="Hotel Solar da Bahia" target="_blank">
+                &raquo; Solar da Bahia
+              </a> 
+              <br />
+              Reservas em: ( 71 ) 3013.4694
+              <br />
+              <br />
+              <strong>Próximos ao local do evento:</strong>
+              <br />
+              <a href="http://www.hotel-cocoon.com" title="Hotel Cocoon" target="_blank">
+                &raquo; Cocoon
+              </a> 
+              <br />
+              <a href="http://www.hoteljaguaribepraia.com.br/" title="Hotel Jaguaribe Praia" target="_blank">
+                &raquo; Jaguaribe Praia
+              </a> 
+            </p>
+
+          </div> <!-- Patrocinio Info -->
+
+          <div class="clear"></div>
+
+          <div id="patrocinadores">
+
+            <h4>Patrocinadores Platina</h4>
+
+            <ul class="lista-patrocinadores">
+              <li>
+                Sem patrocinadores ainda. Deseja patrocinar? <a href="mailto:contato@nosqlba.com.br?subject=Patrocinador">Contate-nos aqui.</a>
+              </li>
+            </ul>
+
+            <div class="clear"></div>
+
+            <h4>Patrocinadores Ouro</h4>
+
+            <ul class="lista-patrocinadores">
+              <li>
+                <a href="http://aws.amazon.com/" target="_blank">
+                  <img src="images/patrocinadores/amazon-web-services.png" alt="marca da Amazon Web Services" title="Amazon Web Services" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.caelum.com.br" target="_blank">
+                  <img src="images/patrocinadores/caelum.png" alt="marca da Caelum" title="Caelum" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.globalcode.com.br" target="_blank">
+                  <img src="images/patrocinadores/globalcode.png" alt="marca da Global Code" title="Global Code" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.redhat.com" target="_blank">
+                  <img src="images/patrocinadores/redhat.png" alt="marca da Redhat" title="Redhat" />
+                </a>
+              </li>
+              <li>
+                Deseja patrocinar? <a href="mailto:contato@nosqlba.com.br?subject=Patrocinador">Contate-nos aqui.</a>
+              </li>
+            </ul>
+
+            <div class="clear"></div>
+
+            <h4>Patrocinadores Prata</h4>
+
+            <ul class="lista-patrocinadores">
+              <li>
+                Sem patrocinadores ainda. Deseja patrocinar? <a href="mailto:contato@nosqlba.com.br?subject=Patrocinador">Contate-nos aqui.</a>
+              </li>
+            </ul>
+
+            <div class="clear"></div>
+
+            <h4>Apoio</h4>
+
+            <ul class="lista-patrocinadores">
+              <li>
+                <a href="http://www.i2u.com.br" title="I2U Soluções e Projetos" target="_blank">
+                  <img src="images/patrocinadores/i2u.png" alt="marca da I2U" title="I2U Soluções e Projetos" height="70" />
+                </a>
+              </li>
+              <li>
+                  <img src="images/patrocinadores/manager_ti.jpg" alt="marca da Manager TI" title="Manager TI Consultoria em TIC" height="70" />
+              </li>
+              <li>
+                <a href="http://www.schoolofnet.com" title="School of Net" target="_blank">
+                  <img src="images/patrocinadores/schoolofnet.png" alt="marca da School of Net" title="School of Net" />
+                </a>
+              </li>
+              <li>
+                Deseja apoiar? <a href="mailto:contato@nosqlba.com.br?subject=Apoio">Contate-nos aqui.</a>
+              </li>
+            </ul>
+
+            <div class="clear"></div>
+
+            <h4>Organização</h4>
+
+            <ul class="lista-patrocinadores">
+              <li>
+                <a href="http://www.linguagil.com.br" title="Grupo LinguÁgil" target="_blank">
+                  <img src="images/organizacao/linguagil.png" alt="marca da LinguÁgil" title="Grupo LinguÁgil" height="70" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.unirb.edu.br" title="UNIRB" target="_blank">
+                  <img src="images/organizacao/unirb.gif" alt="marca da UNIRB" title="UNIRB" />
+                </a>
+              </li>
+              <li>
+                <a href="http://javabahia.blogspot.com" title="Grupo de Usuários Java da Bahia" target="_blank">
+                  <img src="images/organizacao/javabahia.png" alt="marca da JavaBahia" title="Grupo de Usuários Java da Bahia" height="70" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.phpba.com.br" title="Grupo de Usuários PHP da Bahia" target="_blank">
+                  <img src="images/organizacao/phpba.png" alt="marca da PHPBA" title="Grupo de Usuários PHP da Bahia" height="70" />
+                </a>
+              </li>
+              <li>
+                <a href="http://www.apimenti.com.br" title="Apimenti Coisas para internet" target="_blank">
+                  <img src="images/organizacao/apimenti.jpg" alt="marca da Apimenti" title="Apimenti Coisas para internet" height="70" />
+                </a>
+              </li>
+            </ul>
+            
+          </div> <!-- Patrocinadores -->
+          
+        </div> <!-- O que é -->
+
+        <div class="clear"></div>
+
+        <div id="programacao">
+
+          <div class="espacador"></div>
+
+          <h2>Programação</h2>
+          <p>* grade sujeita a alterações</p>
+
+          <h3>01 de Junho</h3>
+
+          <div class="tabela">
+
+            <table class="grid">
+              <thead>
+                <tr>
+                  <th>Lab 1</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>08:00</p>
+                      <br />
+                      <a href="slides/marcio-albuquerque-couchdb.pdf" title="Ver Slides [PDF]" target="_blank">
+                        <img src="images/pdf.png" alt="ícone do PDF" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-left">
+                      Explorando o Couchdb 
+                      <p class="autor">
+                        <a href="#marcio_albuquerque" title="Ver Perfil">
+                          Marcio Albuquerque
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                         - Introdução a BD não-relacionais (NoSQL); <br />
+                         - ACID e CAP; <br />
+                         - Utilização - Documentos, Map-Reduce, Futon; <br />
+                         - Comunicação com HTTP e REST; <br />
+                         - JS com CouchDB; <br />
+                         - PHP com CouchDB.
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>13:00</p>
+                      <br />
+                      <a href="http://prezi.com/uod7h9t1jxhc/desenvolvendo-jee-persistindo-com-nosql/" title="Ver Slide [Prezi]" target="_blank">
+                        <img src="images/slide.png" alt="ícone do Slide" />
+                      </a>
+                      <a href="https://github.com/otaviojava/NOSQL-BA-JavaEE-Cassandra" title="Ver Código [Github]" target="_blank">
+                        <img src="images/github.png" width="22" alt="ícone do Github" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-left">
+                      Usando NOSQL-Cassandra <br />com JEE 6
+                      <p class="autor">
+                        <a href="#otavio_santana" title="Ver Perfil">
+                          Otávio Santana
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        - Conceito de NOSQL<br />
+                        - Diferença entre SQL e NOSQL<br />
+                        - Em qual momento devo usar um banco NOSQL ?<br />
+                        - Conhecendo sobre o cassandra<br />
+                        - Montando uma aplicação<br />
+                        - Como fica a camada DAO no Cassandra?<br />
+                        - Escalabilidade vertical e horizontal<br />
+                        - Exemplo aplicação Java EE6
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table> <!-- Tabela de programação Lab 1 -->
+
+            <table class="grid efeito">
+              <thead>
+                <tr>
+                  <th>Lab 2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>08:00</p>
+                      <br />
+                      <a href="http://www.slideshare.net/mfdeveloper/phpmongodb-13215903" title="Ver Slides [Slideshare]" target="_blank">
+                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-right">
+                      PHP e MongoDb
+                      <p class="autor">
+                        <a href="#michel_felipe" title="Ver Perfil">
+                          Michel Felipe
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        - Porque utilizar MongoDb com PHP?<br />
+                        - Overview MongoDb: Caracteristicas básicas<br />
+                        - Banco de dados Orientado a Documentos<br />
+                        - Download, Instalação e Comandos do Shell<br />
+                        - Inserindo dados via Shell<br />
+                        - Retornando dados via Shell<br />
+                        - Instalação de Driver de Conexão PHP para o Mongo<br />
+                        - Conectando ao Mongo com PHP<br />
+                        - Conceito de "Chave Primária"<br />
+                        - Inserindo dados<br />
+                        - Retornando dados inseridos<br />
+                        - Conclusão
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>13:00</p>
+                      <br />
+                      <a href="http://www.slideshare.net/mauriciovieira/curso-nodejs-nosqlba-2012" title="Ver Slides [Slideshare]" target="_blank">
+                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-right">
+                      Introdução ao NodeJS
+                      <p class="autor">
+                        <a href="#mauricio_vieira" title="Ver Perfil">
+                          Maurício Vieira
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        Javascript: escopo, tipos e variáveis, funções anônimas, JSOO<br />
+                        NodeJS: instalação, npm, interpretador, módulos core, testes e ExpressJS<br />
+                        Criando uma aplicação: exemplo prático com Coding Dojo
+                      </div>
+                      <br />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table> <!-- Tabela de programação Lab 2 -->
+
+            <div class="grid-efeito-imagem">
+              <img src="images/tabela_efeito.png" alt="imagem de efeito da tabela" />
+            </div>
+            
+          </div> <!-- Tabela -->
+
+          <div class="clear"></div>
+
+          <br /><br /><br />
+
+          <h3>02 de Junho</h3>
+
+          <div class="tabela">
+
+            <table class="grid">
+              <thead>
+                <tr>
+                  <th>Auditório</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>08:30</p>
+                    </div>
+                    <div class="dados">
+                      Abertura
+                      <p class="autor">
+                        Organização
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>09:00</p>
+                      <br />
+                      <a href="http://www.slideshare.net/alexandre_porcelli/armazenamento-de-dados-em-poucas-palavras-ou-uma-resposta-definitiva-para-todas-as-eternas-questes-filosficas" title="Ver Slides [Slideshare]" target="_blank">
+                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-left">
+                      Armazenamento de Dados em Poucas Palavras ou Uma resposta definitiva para todas as eternas questões filosóficas.
+                      <p class="autor">
+                        <a href="#alexandre_porcelli" title="Ver Perfil">
+                          Alexandre Porcelli
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        De onde viemos?<br />
+                        Onde estamos?<br />
+                        Para onde vamos?<br />
+                        Qual é o propósito de tudo isso?<br />
+                        O que é a verdade?<br />
+                        O que é bom e o que é mau?<br />
+                        Qual é o significado da vida?
+                        <br /><br />
+                        Estas são algumas das chamadas "questões fundamentais". Esta palestra tem como desafio<br />
+                        prover as respostas para todas elas.
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>09:40</p>
+                      <br />
+                      <a href="http://www.slideshare.net/mauriciovieira/curso-nodejs-nosqlba-2012" title="Ver Slides [Slideshare]" target="_blank">
+                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-left">
+                      Javascript no servidor e NoSQL com NodeJS
+                      <p class="autor">
+                        <a href="#mauricio_vieira" title="Ver Perfil">
+                          Maurício Vieira
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        NodeJS é uma plataforma baseada no motor javascript V8 para desenvolvimento de aplicações orientadas a eventos e de baixa latência. O NodeJS permite o desenvolvimento de aplicações 100% em javascript, tanto no servidor quanto no cliente.
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>10:20</p>
+                      <br />
+                      <a href="slides/marcio-albuquerque-couchdb.pdf" title="Ver Slides [PDF]" target="_blank">
+                        <img src="images/pdf.png" alt="ícone do PDF" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-left">
+                      Quantos elefantes cabem em um Sofá?
+                      <p class="autor">
+                        <a href="#marcio_albuquerque" title="Ver Perfil">
+                          Márcio Lima Albuquerque
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        Como o PHP se dá com o CouchDB? A palestra mostra um pouco como funciona o CouchDB, como o PHP pode conversar com este BD NoSQL, quando usar e quando não usar.
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>11:00</p>
+                      <br />
+                      <a href="http://www.slideshare.net/timotta/redis-na-prtica" title="Ver Slides [Slideshare]" target="_blank">
+                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-left">
+                      Redis para registro de atividades e pontuação
+                      <p class="autor">
+                        <a href="#tiago_albineli" title="Ver Perfil">
+                          Tiago Albineli Motta
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        Case do uso do Redis no musica.com.br, site de música da globo.com,, mostrando como foram utilizados diversas estruturas de dados do redis para resolver situações que exigiam rapidez e escalabilidade, como o registro de atividades dos usuários, pontuações e agregações.    
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>11:40</p>
+                    </div>
+                    <div class="dados">
+                      Startup
+                      <p class="autor">
+                        <a href="#thiago_colares" title="Ver Perfil">
+                          Thiago Colares
+                        </a>
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="almoco">
+                  <td>
+                    <div class="horario">
+                      <p>12:00</p>
+                    </div>
+                    <div class="dados">
+                      Almoço
+                      <p class="autor">
+                        Onde os fracos não tem vez!
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table> <!-- Tabela de programação Lab 1 -->
+
+            <table class="grid efeito">
+              <thead>
+                <tr>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>13:30</p>
+                      <br />
+                      <a href="http://prezi.com/1ptsg9ednj0a/novas-fronteiras-do-cache-para-aplicacoes-java/" title="Ver Slide [Prezi]" target="_blank">
+                        <img src="images/slide.png" alt="ícone do Slide" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-right">
+                      Novas fronteiras do Cache para aplicações Java
+                      <p class="autor">
+                        <a href="#julio_faerman" title="Ver Perfil">
+                          Julio Faerman
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        O Cache é um elemento cada vez mais importante na arquitetura de sistemas, principalmente públicos e de grande escala, como os desenvolvidos pelo Google, Facebook, Twitter e outros. Tradicionalmente, o Cache tem sido usados na otimização de desempenho em diversas maneiras, mas as possibilidades vão muito além. Com o amadurecimento dos caches distribuídos, hoje podemos usá-los para tolerância à falhas, persistência, alta disponibilidade, computação em grade e diversas outras aplicações. Esta apresentação mostra os principais cenários onde o Cache é importante e demonstra seu uso na plataforma Java, incluindo exemplos com os principais produtos e especificações.
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>14:10</p>
+                      <br />
+                      <a href="http://jdrowell.com/talks/TDC2011/" title="Ver Slide" target="_blank">
+                        <img src="images/slide.png" alt="ícone do Slide" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-right">
+                      ElasticSearch
+                      <p class="autor">
+                        <a href="#john_rowell" title="Ver Perfil">
+                          John D. Rowell
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        ElasticSearch: Seu banco de dados não precisa de índices 
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>14:50</p>
+                      <br />
+                      <a href="http://www.slideshare.net/jpapo/nosql-e-big-data-na-nuvem" title="Ver Slides [Slideshare]" target="_blank">
+                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-right">
+                      NoSQL na Nuvem – Escalabilidade e Performance na Velocidade da Luz com a Amazon Web Services 
+                      <p class="autor">
+                        <a href="#jose_papo" title="Ver Perfil">
+                          José Papo
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        Nessa palestra vamos mostrar como empresas e startups (como a amazon.com, Netflix, foursquare, Gol Linhas Aéreas, IMDb, TweetDeck) utilizam soluções NoSQL na Nuvem da Amazon para atender milhões de usuários com custo baixo e alta performance. Vamos falar sobre as várias formas de usar NoSQL na Nuvem e as grandes oportunidades para inovação.
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>15:30</p>
+                      <br />
+                      <a href="http://www.slideshare.net/avelinoo/modelando-aplicao-em-documento-mongodb" title="Ver Slides [Slideshare]" target="_blank">
+                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-right">
+                      MongoDB, modelando aplicação em documento
+                      <p class="autor">
+                        <a href="#thiago_avelino" title="Ver Perfil">
+                          Thiago Avelino
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        Muitas aplicações tem necessidade em utilizar banco de dados não relacional por não precisar precisar de relacionamento entre os registrou ou ate mesmo pelo volume de dados. Venho mostrar como modelar uma aplicação sem pensar em relacionamento. 
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>16:10</p>
+                      <br />
+                      <a href="http://www.slideshare.net/adrianoalmeida7/nosqlba" title="Ver Slides [Slideshare]" target="_blank">
+                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
+                      </a>
+                      <a href="https://github.com/adrianoalmeida7/neo4j-noite-tecnica" title="Ver Código [Github]" target="_blank">
+                        <img src="images/github.png" width="22" alt="ícone do Github" />
+                      </a>
+                    </div>
+                    <div class="dados info-palestra-right">
+                      Neo4j e grafos com teoria, live coding e bastante axé
+                      <p class="autor">
+                        <a href="#adriano_almeida" title="Ver Perfil">
+                          Adriano Almeida
+                        </a>
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        Descrição: Trabalhar com bancos de dados não relacionais pode ser complicado no começo e por vezes as diferenças da forma de se trabalhar pode assustar e desmotivar muitas pessoas. Justamente por isso, essa palestra vai mostrar para quem nunca viu um noSQL na prática, que as coisas não precisam ser tão complexas. Quem já tem experiência com bancos de dados não relacionais, aprenderá recursos que fazem com que os bancos de dados baseados em grafo se destacar em diversas situações.
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="horario">
+                      <p>16:50</p>
+                    </div>
+                    <div class="dados info-palestra-right">
+                      Fishbowl
+                      <p class="autor">
+                        Todos
+                      </p>
+
+                      <div class="info-palestra-dados">
+                        <img src="images/anonimato.jpg" alt="imagem de anonimato representato qualquer pessoa" />
+                        <br />
+                        O momento onde qualquer um pode ser o palestrante compartilhando suas idéias, experiências, tirando dúvidas com interação total do público.
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="encerramento">
+                  <td>
+                    <div class="horario">
+                      <p>17:30</p>
+                    </div>
+                    <div class="dados">
+                      Encerramento com sorteios :D
+                      <p class="autor">
+                        May the force be with you!
+                      </p>
+                      <br />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table> <!-- Tabela de programação Lab 2 -->
+
+            <div class="grid-efeito-imagem">
+              <img src="images/tabela_efeito.png" alt="imagem de efeito da tabela" />
+            </div>
+            
+          </div> <!-- Tabela -->
+
+          <br /><br /><br /><br /><br /><br />
+          
+        </div> <!-- Programação -->
+
+        <div class="clear"></div>
+
+        <div id="palestrantes">
+
+          <div class="espacador"></div>
+
+          <h2>Palestrantes</h2>
+
+          <a id="adriano_almeida"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/adriano_almeida.jpg" alt="foto do palestrante Adriano Almeida" title="Adriano Almeida" />
+              </li>
+              <li>
+                <h3>Adriano Almeida</h3>
+
+                <a href="http://ahalmeida.com/" title="Site" class="site">
+                  Site
+                </a>
+
+                <a href="https://twitter.com/adrianoalmeida7" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <h4>Caelum</h4>
+
+                <p>
+                  Consultor, instrutor e desenvolvedor pela Caelum, onde trabalha com desenvolvimento de software em Java, Ruby e Scala. Já palestrou em eventos como a QConSP e Devoxx (Bélgica). É committer de projetos open source como o VRaptor e no tempo livre contribui com código e ideias para o banco de dados Neo4j, onde vem ajudando mais especificamente no desenvolvimento da linguagem Cypher. Mais recentemente vem estudando DSLs e parsers de linguagens, assim como os bancos de dados não relacionais.
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="alexandre_porcelli"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/alexandre_porcelli.jpg" alt="foto do palestrante Alexandre Porcelli" title="Alexandre Porcelli" />
+              </li>
+              <li>
+                <h3>Alexandre Porcelli</h3>
+
+                <a href="http://porcelli.com.br/" title="Site" class="site">
+                  Site
+                </a>
+
+                <a href="https://twitter.com/porcelli" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <a href="http://www.facebook.com/alexandre.porcelli" title="Facebook" class="facebook">
+                  Facebook
+                </a>
+
+                <h4>Red Hat</h4>
+
+                <p>
+                  Principal Software Engineer na JBoss pela Red Hat, membro permanente do time de engenharia do Drools/jBPM. Programador profissional desde 1996, é especialista em sistemas distribuídos bem como no desenvolvimento de parsers. Devido a necessidade de lidar com grandes volumes de dados do seu projeto OpenSpotLight, foi um dos pioneiros na utilização das tecnologias conhecidas como noSQL, sendo também responsável pela organização do noSQL Brasil, a principal conferência sobre armazenamento e tratamento de dados da América Latina.
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="john_rowell"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/john_rowell.png" alt="foto do palestrante John D. Rowell" title="John D. Rowell" />
+              </li>
+              <li>
+                <h3>John D. Rowell</h3>
+
+                <a href="http://www.jdrowell.com/" title="Site" class="site">
+                  Site
+                </a>
+
+                <a href="https://twitter.com/jdrowell" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <h4>EYB</h4>
+
+                <p>
+                  Programador e consultor de TI com 25 anos de experiência profissional. Trabalha principalmente com startups (próprias e de clientes), buscando sempre utilizar tecnologia de ponta para gerar eficiências e viabilizar produtos. Hoje seus focos de pesquisa e desenvolvimento incluem Ruby, NoSQL, cloud e sistemas distribuídos. 
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="jose_papo"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/jose_papo.jpg" alt="foto do palestrante José Papo" title="José Papo" />
+              </li>
+              <li>
+                <h3>José Papo</h3>
+
+                <a href="http://josepaulopapo.blogspot.com.br/" title="Site" class="site">
+                  Site
+                </a>
+
+                <a href="https://twitter.com/josepapo" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <h4>Amazon Web Services</h4>
+
+                <p>
+                  Tech Evangelist da Amazon Web Services para a América Latina. Anuncia sempre novidades sobre a Amazon em seu twitter @josepapo e no blog em português da AWS: http://aws.typepad.com/brasil . É desenvolvedor de software e mestre em engenharia da computação. Também atua como professor de pós-graduação na PUC-SP.
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="julio_faerman"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/julio_faerman.jpg" alt="foto do palestrante Julio Faerman" title="Julio Faerman" />
+              </li>
+              <li>
+                <h3>Julio Faerman</h3>
+
+                <a href="http://jfaerman.appspot.com/" title="Site" class="site">
+                  Site
+                </a>
+
+                <a href="https://twitter.com/jmfaerman" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <h4>Red Hat</h4>
+
+                <p>
+                  Engenheiro de software, desenvolvedor e professor, entre outros rótulos. Especializou-se em entregar sistemas corporativos com requisitos complexos e em melhorar processos de desenvolvimento, principalmente em órgãos do governo e empresas de telecom. Hoje trabalha na Red Hat/JBoss, depois de ter passado pela Borland, NEC e clientes de sua própria empresa, a Ximp. Interessa-se por assuntos que vão de teoria algorítmica dos jogos à música e jardinagem, mas sempre deixando tempo para participar dos eventos e publicações da comunidade.
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="mauricio_vieira"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/mauricio_vieira.jpg" alt="foto do palestrante Maurício Vieira" title="Maurício Vieira" />
+              </li>
+              <li>
+                <h3>Maurício Vieira</h3>
+
+                <a href="http://www.facebook.com/mbcvieira" title="Facebook" class="facebook">
+                  Facebook
+                </a>
+
+                <h4>Serpro</h4>
+
+                <p>
+                  Entusiasta de software livre e metodologias ágeis, e participante de comunidades locais de tecnologias como nodejs-bahia e grupy-ba. Membro do Grupo LinguÁgil, atualmente é analista de desenvolvimento no Serviço Federal de Processamento de Dados (SERPRO).
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="marcio_albuquerque"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/marcio_albuquerque.jpg" alt="foto do palestrante Marcio Albuquerque" title="Marcio Albuquerque" />
+              </li>
+              <li>
+                <h3>Marcio Albuquerque</h3>
+
+                <a href="http://porcelli.com.br/" title="Site" class="site">
+                  Site
+                </a>
+
+                <a href="https://twitter.com/mlalbuquerque" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <a href="http://www.facebook.com/mlalbuquerque" title="Facebook" class="facebook">
+                  Facebook
+                </a>
+
+                <h4>Serpro/Unirb</h4>
+
+                <p>
+                  Um dos fundadores do Grupo e do Evento LinguÁgil. Representante do PHPBA (participante muito ativo), PHPBR, Agile Bahia e Android Bahia. Pregador da programação poliglota (mas tem uma queda pelo PHP e JS). Entusiasta do mundo agile, principalmente do Scrum, do qual é usuário. Palestrante e instrutor de vários eventos (FISL, Latinoware, PHP Conference, LinguÁgil). Profissão: bon vivant e gourmet! Hobby: programação!
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="michel_felipe"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/michel_felipe.jpg" alt="foto do palestrante Michel Felipe" title="Michel Felipe" />
+              </li>
+              <li>
+                <h3>Michel Felipe</h3>
+
+                <a href="http://twitter.com/mfdeveloper" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <h4>Prodeb</h4>
+
+                <p>
+                  Atuando como Analista de Sistemas na Prodeb, apaixonado por PHP e Javascript e bastante envolvido com tecnologias móveis. Formado em Redes de Computadores e Pós Graduando em Eng. de Software. Pesquisador e muito interessado sobre NOSQL e sua aplicabilidade prática.
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="otavio_santana"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/otavio_santana.jpg" alt="foto do palestrante Otávio Santana" title="Otávio Santana" />
+              </li>
+              <li>
+                <h3>Otávio Santana</h3>
+
+                <a href="http://otaviosantana.blogspot.com.br/" title="Site" class="site">
+                  Site
+                </a>
+
+                <a href="http://twitter.com/otaviojava" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <a href="http://www.facebook.com/otaviojava" title="Facebook" class="facebook">
+                  Facebook
+                </a>
+
+                <h4>JavaBahia</h4>
+
+                <p>
+                  Desenvolvedor entusiasta do mundo Open-Source. Praticante da filosofia ágil e do desenvolvimento poliglota na Bahia, JUG Leader do JavaBahia, membro do  SouJava, um dos fomentadores do grupo LinguÁgil. Presente nos maiores eventos Java e ágil em nível nacional, contribui para o projeto openjdk e a plataforma JSE, criador do Apache Easy-Cassandra, presente na comunidade Java mundial além de escrever artigos para DevMedia, revista espírito livre e java.net
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="thiago_avelino"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/thiago_avelino.jpg" alt="foto do palestrante Thiago Avelino" title="Thiago Avelino" />
+              </li>
+              <li>
+                <h3>Thiago Avelino</h3>
+
+                <a href="http://avelino.us/" title="Site" class="site">
+                  Site
+                </a>
+
+                <a href="http://twitter.com/avelino0" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <a href="http://www.facebook.com/avelino0" title="Facebook" class="facebook">
+                  Facebook
+                </a>
+
+                <h4>Mochii</h4>
+
+                <p>
+                	Software Engineer na Mochii, matemático, conhecido como Avelino, desenvolvedor, participas de varios projetos open source, evangelista NoSQL, Python, Django, London, Node.js e muitas outras tecnologia, praticante e entusiasta de metodologias ágeis.
+		</p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="thiago_colares"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/thiago_colares.jpg" alt="foto do palestrante Thiago Colares" title="Thiago Colares" />
+              </li>
+              <li>
+                <h3>Thiago Colares</h3>
+
+                <a href="http://twitter.com/thicolares" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <h4>Apimenti</h4>
+
+                <p>
+                  Inquieto, empreendedor, programador, entusiasta de interfaces amigáveis, praticante de metodologias ágeis. Atualmente dedicado à criação de negócios através de ferramentas como The Lean Startup, Customer Development, BMG, Lean Canvas etc. e construção, com mão na massa, de produtos escaláveis. Apaixonado por música, mantém o laboratório http://www.ukuleles.com.br. Co-founder da startup Apimenti.
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+
+          <a id="tiago_albineli"></a>
+          <br />
+          <br />
+          <br />
+          <div class="palestrante">
+
+            <ul>
+              <li class="foto">
+                <img src="images/palestrantes/tiago_albineli.jpg" alt="foto do palestrante Tiago Albineli Motta" title="Tiago Albineli Motta" />
+              </li>
+              <li>
+                <h3>Tiago Albineli Motta</h3>
+
+                <a href="http://programandosemcafeina.blogspot.com.br/" title="Site" class="site">
+                  Site
+                </a>
+
+                <a href="http://twitter.com/timotta" title="Twitter" class="twitter">
+                  Twitter
+                </a>
+
+                <a href="http://www.facebook.com/timotta" title="Facebook" class="facebook">
+                  Facebook
+                </a>
+
+                <h4>Globo.com</h4>
+
+                <p>
+                  Carioca de familia gaúcha que já morou em pernambuco e que é noivo de uma mineira, a 12 anos trabalhando na área de tecnologia, sendo que os seis últimos na Globo.com. Hoje atua como especialista em desenvolvimento de software liderando o time de desenvolvimento do site musica.com.br. Nas horas vagas programa um pouco mais no webdemocracia.com.
+                </p>
+              </li>
+            </ul>
+          
+          </div> <!-- / palestrante -->
+          
+        </div> <!-- Palestrantes -->
+
+        <div class="clear"></div>
+
+      </div>
+
+    </div> <!-- Geral -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29869298-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>

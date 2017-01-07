@@ -1,0 +1,38 @@
+a, button, input[type=button], input[type=submit] {
+    cursor: pointer!important;
+    cursor: hand!important;
+}
+
+button {
+	position: relative;
+	z-index: 1000;
+}
+
+a.botao_enviar,
+button.botao_enviar {
+	width: 155px;
+	background: transparent url(../images/botao.png) 2px 2px no-repeat;
+	border: 0;
+	padding: 11px 0;
+	top: -7px;
+	font-size: 18px;
+	text-shadow: 0px 1px 0px #FFF;
+	color: #1A576A;
+	font-family: 'PT Sans', sans-serif;
+	text-decoration: none;
+}
+
+a.botao_enviar:hover,
+button.botao_enviar:hover {
+	background-position: 2px -58px;
+}
+
+a.botao_enviar:active,
+button.botao_enviar:active {
+	background-position: 2px -117px;
+}
+
+a.botao_enviar {
+	text-align: center;
+	padding: 13px 15px;
+}
