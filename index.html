@@ -1,822 +1,249 @@
 ﻿<!DOCTYPE HTML>
-<!-- Hacks Condicionais para o IE6 - IE9 --> 
-<!--[if lt IE 7 ]> <html lang="pt-br" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="pt-br" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="pt-br" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="pt-br" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="pt-br" class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!-- Força o navegador a renderizar com o mecanismo mais atual do IE (também em Intranet) e no Chrome Frame 
-       Remova isso se você utiliza o arquivo .htaccess -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="author" content="I2U Solucões e Projetos www.i2u.com.br">
-    <meta name="description" content="Conferência sobre as tecnolgoias em volta do NoSQL" /> 
-    <meta name="keywords" content="nosql, sql, rdms, sgbdr, banco de dados, database, not only sql, bahia, salvador, mongodb, couchdb, cassandra, neo4j, hipertable, bigtable, mysql, oracle, postgres, web, internet, solution, solução, soluções, solutions, app, webapp, application, applications, aplicativos, aplicativo, design, programação, programming, desenvolvimento, development, develop, developer" /> 
-    <meta name="copyright" content="&copy; Copyleft NoSQL BA" />
-    <meta name="google-site-verification" content="" />
+<html lang="pt-br">
 
-    <!--  Visualização de tela em Mobile (Otimizada) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoSQLBA - Conferência Baiana de NoSQL</title>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="css/reset.css" />
-    <link type="text/css" rel="stylesheet" href="css/rcarousel.css" />
-    <link type="text/css" rel="stylesheet" href="css/botoes.css" />
-    <link type="text/css" rel="stylesheet" href="css/popover.css" />
-    <link type="text/css" rel="stylesheet" href="css/geral.css?1" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <!--[if IE]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <style type="text/css">
-        .clear {
-          zoom: 1;
-          display: block;
-        }
-      </style>
+<head>
+  <!-- META TAGS -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Conferência sobre as tecnolgoias em volta do NoSQL" />
+  <meta name="keywords" content="nosql, sql, rdms, sgbdr, banco de dados, database, not only sql, bahia, salvador, mongodb,
+    couchdb, cassandra, neo4j, hipertable, bigtable, mysql, oracle, postgres, web, internet, solution, solução, soluções, 
+    solutions, app, webapp, application, applications, aplicativos, aplicativo, design, programação, programming, 
+    desenvolvimento, development, develop, developer" />
+  <meta name="copyright" content="&copy; Copyleft NoSQL BA" />
+
+  <title>NoSQLBA - Conferência Baiana de NoSQL</title>
+
+  <!--Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+  <!--FontAwesome Font Style -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <!-- Nosso estilo personalizado -->
+  <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- Busca o jQuery de modo on-line. Se não encontrado, aponta para o arquivo local. -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery.js"%3E%3C/script%3E'))</script>
-    <script type="text/javascript" src="js/selectivizr-min.js" type="text/javascript"></script> 
-    <script type="text/javascript" src="js/browser.js"></script>
-    <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
-    <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
-    <script type="text/javascript" src="js/jquery.ui.rcarousel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.hotkeys.js"></script>
-    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
-    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-  </head>
-
-  <body>
-
-    <a href="#" id="subir" class="default" title="Voltar ao topo">Subir</a>
-
-     <!-- Geral -->
-    <div id="geral">
-
-      <!-- Topo -->
-      <div id="topo">
-
-        <!-- Header -->
-        <div id="header">
-
-          <h1 title="NoSQLBA - Conferência Baiana de NoSQL">
-            NoSQLBA - Conferência Baiana de NoSQL
-          </h1>
-
-          <div id="local" title="30 de março - 1 de abril - Local a definir">
-            30 de março - 1 de abril - Local a definir
-          </div> <!-- Data e Local -->
-
-          <div id="menu-box" class="default">
-            
-            <!-- Menu -->
-            <ul id="menu">
-              <li class="o-que-e">
-                <a href="#o-que-e" title="O que é?">
-                  O que é?
-                </a>
-              </li>
-              <li class="programacao">
-                <a href="#programacao" title="Programação">
-                  Programação
-                </a>
-              </li>
-              <li class="palestrantes">
-                <a href="#palestrantes" title="Palestrantes">
-                  Palestrantes
-                </a>
-              </li>
-              <li class="inscricao">
-                <a href="http://eventos.apimenti.com.br/nosqlba/" title="Inscrição ( abrirá em uma nova janela )" target="_blank">
-                  Inscrição
-                </a>
-              </li>
-            </ul> <!-- Menu -->
-
-          </div> <!-- Menu Box -->
-
-          <div id="patrocinadores-carousel">
-
-            <h2>Patrocinadores</h2>
-
-            <div class="clear"></div>
-
-            <a href="javascript:;" id="ui-carousel-prev">
-              <span>prev</span>
-            </a>
-
-            <div id="carousel">
-              
-              <a href="http://aws.amazon.com/" target="_blank">
-                <img src="images/patrocinadores/amazon-web-services.png" alt="marca da Amazon Web Services" title="Amazon Web Services" height="45" />
-              </a>
-              
-             <a href="http://www.i2u.com.br" title="I2U Soluções e Projetos" target="_blank">
-                <img src="images/patrocinadores/i2u.png" alt="marca da I2U" title="I2U Soluções e Projetos" height="45" />
-              </a>
-              
-             <a href="http://www.linguagil.com.br" title="Grupo LinguÁgil" target="_blank">
-                <img src="images/organizacao/linguagil.png" alt="marca da LinguÁgil" title="Grupo LinguÁgil" height="45" />
-              </a>
-
-
-              <a href="http://javabahia.blogspot.com" title="Grupo de Usuários Java da Bahia" target="_blank">
-                <img src="images/organizacao/javabahia.png" alt="marca da JavaBahia" title="Grupo de Usuários Java da Bahia" height="45" />
-              </a>
-
-              <a href="http://www.phpba.com.br" title="Grupo de Usuários PHP da Bahia" target="_blank">
-                <img src="images/organizacao/phpba.png" alt="marca da PHPBA" title="Grupo de Usuários PHP da Bahia" height="45" />
-              </a>
-
-            </div> <!-- Carousel -->
-
-            <a href="javascript:;" id="ui-carousel-next">
-              <span>next</span>
-            </a>
-
-          </div> <!-- Carousel de Patrocinadores -->
-          
-        </div><!-- Header -->
-
-      </div> <!-- Topo -->
-
-      <div class="clear"></div>
-
-      <div id="conteudo">
-
-        <div id="o-que-e">
-
-          <div class="espacador"></div>
-
-          <h2>O que é?</h2>
-
-          <div class="texto">
-
-            <p>
-              Os banco de Dados NOSQL (not only SQL) foram criados, principalmente, para resolver problemas com aplicações web que precisam operar com gigantescas cargas de dados além de poder escalar com grande facilidade. Esses tipos de banco de dados vem sendo usados com muita frequência em redes sociais como Twitter, Facebook, além de persistência em aplicações nas nuvens. Outro ponto importante a citar é a crescente adoção destas novas tecnologias, inclusive em mercados mais conservadores, tais como instituições financeiras e agências governamentais, seus motivos são diversos normalmente para solucionar problemas com flexibilidade, escalabilidade, latência e performance. Para demonstrar, compartilhar essas tecnologias foi criado o evento NOSQL-BA.
-            </p>
-
-            <h2 class="localizacao">Localização</h2>
-            
-            <div class="mapa">
-              <iframe width="570" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?q=unirb&amp;hl=pt-BR&amp;hq=unirb&amp;hnear=Salvador+-+Bahia&amp;t=m&amp;ie=UTF8&amp;cid=6442231572476141154&amp;ll=-12.943417,-38.393955&amp;spn=0.025095,0.051413&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.br/maps?q=unirb&amp;hl=pt-BR&amp;hq=unirb&amp;hnear=Salvador+-+Bahia&amp;t=m&amp;ie=UTF8&amp;cid=6442231572476141154&amp;ll=-12.943417,-38.393955&amp;spn=0.025095,0.051413&amp;z=14&amp;iwloc=A&amp;source=embed" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>
-            </div>
-            
-          </div> <!-- Texto -->
-
-          <div class="patrocinio-info">
-
-            <h3>Seja um patrocinador.</h3>
-
-            <a href="./nosql-bahia.pdf" target="_blank" title="Baixar proposta ( PDF )" class="botao_enviar">Baixar proposta</a>
-
-            <br /><br /><br /><br /><br /><br /><br />
-
-            <h3>Contatos</h3>
-
-            <p>
-              <a href="mailto:contato@nosqlba.com.br" title="Entre em contato">
-                contato@nosqlba.com.br
-              </a>
-              <br />
-              Otávio - 9267.2795
-              <br />
-              Silas - 9155.0533
-            </p>
-
-            <h3>Hotéis</h3>
-
-            <p>
-              <strong>Onde os palestrantes ficarão: </strong>
-              <br />
-              <a href="http://www.solarmarhotel.com.br/" title="Hotel Solar da Bahia" target="_blank">
-                &raquo; Solar da Bahia
-              </a> 
-              <br />
-              Reservas em: ( 71 ) 3013.4694
-              <br />
-              <br />
-              <strong>Próximos ao local do evento:</strong>
-              <br />
-              <a href="http://www.hotel-cocoon.com" title="Hotel Cocoon" target="_blank">
-                &raquo; Cocoon
-              </a> 
-              <br />
-              <a href="http://www.hoteljaguaribepraia.com.br/" title="Hotel Jaguaribe Praia" target="_blank">
-                &raquo; Jaguaribe Praia
-              </a> 
-            </p>
-
-          </div> <!-- Patrocinio Info -->
-
-          <div class="clear"></div>
-
-          <div id="patrocinadores">
-
-            <h4>Patrocinadores Platina</h4>
-
-            <ul class="lista-patrocinadores">
-              <li>
-                Sem patrocinadores ainda. Deseja patrocinar? <a href="mailto:contato@nosqlba.com.br?subject=Patrocinador">Contate-nos aqui.</a>
-              </li>
-            </ul>
-
-            <div class="clear"></div>
-
-            <h4>Patrocinadores Ouro</h4>
-
-            <ul class="lista-patrocinadores">
-              <li>
-                <a href="http://aws.amazon.com/" target="_blank">
-                  <img src="images/patrocinadores/amazon-web-services.png" alt="marca da Amazon Web Services" title="Amazon Web Services" />
-                </a>
-              </li>
-              <li>
-                Deseja patrocinar? <a href="mailto:contato@nosqlba.com.br?subject=Patrocinador">Contate-nos aqui.</a>
-              </li>
-            </ul>
-
-            <div class="clear"></div>
-
-            <h4>Patrocinadores Prata</h4>
-
-            <ul class="lista-patrocinadores">
-              <li>
-                Sem patrocinadores ainda. Deseja patrocinar? <a href="mailto:contato@nosqlba.com.br?subject=Patrocinador">Contate-nos aqui.</a>
-              </li>
-            </ul>
-
-            <div class="clear"></div>
-
-            <h4>Apoio</h4>
-
-            <ul class="lista-patrocinadores">
-              <li>
-                <a href="http://www.i2u.com.br" title="I2U Soluções e Projetos" target="_blank">
-                  <img src="images/patrocinadores/i2u.png" alt="marca da I2U" title="I2U Soluções e Projetos" height="70" />
-                </a>
-              </li>
-              <li>
-                Deseja apoiar? <a href="mailto:contato@nosqlba.com.br?subject=Apoio">Contate-nos aqui.</a>
-              </li>
-            </ul>
-
-            <div class="clear"></div>
-
-            <h4>Organização</h4>
-
-            <ul class="lista-patrocinadores">
-              <li>
-                <a href="http://www.linguagil.com.br" title="Grupo LinguÁgil" target="_blank">
-                  <img src="images/organizacao/linguagil.png" alt="marca da LinguÁgil" title="Grupo LinguÁgil" height="70" />
-                </a>
-              </li>
-            
-              <li>
-                <a href="http://javabahia.blogspot.com" title="Grupo de Usuários Java da Bahia" target="_blank">
-                  <img src="images/organizacao/javabahia.png" alt="marca da JavaBahia" title="Grupo de Usuários Java da Bahia" height="70" />
-                </a>
-              </li>
-              <li>
-                <a href="http://www.phpba.com.br" title="Grupo de Usuários PHP da Bahia" target="_blank">
-                  <img src="images/organizacao/phpba.png" alt="marca da PHPBA" title="Grupo de Usuários PHP da Bahia" height="70" />
-                </a>
-              </li>
-      
-            </ul>
-            
-          </div> <!-- Patrocinadores -->
-          
-        </div> <!-- O que é -->
-
-        <div class="clear"></div>
-
-        <div id="programacao">
-
-          <div class="espacador"></div>
-
-          <h2>Programação</h2>
-          <p>* grade sujeita a alterações</p>
-
-          <h3>31 de Março</h3>
-
-          <div class="tabela">
-
-            <table class="grid">
-              <thead>
-                <tr>
-                  <th>Lab 1</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>08:00</p>
-                      <br />
-                      <a href="slides/marcio-albuquerque-couchdb.pdf" title="Ver Slides [PDF]" target="_blank">
-                        <img src="images/pdf.png" alt="ícone do PDF" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-left">
-                      A definir
-                      <p class="autor">
-                        <a href="#" title="Ver Perfil">
-                          A definir
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                         A definir <br />
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>13:00</p>
-                      <br />
-                      <a href="#" title="Ver Slide [Prezi]" target="_blank">
-                        <img src="images/slide.png" alt="ícone do Slide" />
-                      </a>
-                      <a href="#" title="Ver Código [Github]" target="_blank">
-                        <img src="images/github.png" width="22" alt="ícone do Github" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-left">
-                      A Definir
-                      <p class="autor">
-                        <a href="#otavio_santana" title="Ver Perfil">
-                          TBD
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD<br />
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table> <!-- Tabela de programação Lab 1 -->
-
-            <table class="grid efeito">
-              <thead>
-                <tr>
-                  <th>Lab 2</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>08:00</p>
-                      <br />
-                      <a href="#" title="A definir" target="_blank">
-                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-right">
-                      A definir
-                      <p class="autor">
-                        <a href="#" title="Ver Perfil">
-                          A definir
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        - ?<br />
-                        - Conclusão
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>13:00</p>
-                      <br />
-                      <a href="#" title="Ver Slides [Slideshare]" target="_blank">
-                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-right">
-                      A definir
-                      <p class="autor">
-                        <a href="#" title="Ver Perfil">
-                          A definir
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD<br />
-                        
-                      </div>
-                      <br />
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table> <!-- Tabela de programação Lab 2 -->
-
-            <div class="grid-efeito-imagem">
-              <img src="images/tabela_efeito.png" alt="imagem de efeito da tabela" />
-            </div>
-            
-          </div> <!-- Tabela -->
-
-          <div class="clear"></div>
-
-          <br /><br /><br />
-
-          <h3>01 de Abril</h3>
-
-          <div class="tabela">
-
-            <table class="grid">
-              <thead>
-                <tr>
-                  <th>Auditório</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>08:30</p>
-                    </div>
-                    <div class="dados">
-                      Abertura
-                      <p class="autor">
-                        Organização
-                      </p>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>09:00</p>
-                      <br />
-                      <a href="#" title="Ver Slides [Slideshare]" target="_blank">
-                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-left">
-                      TBD
-                      <p class="autor">
-                        <a href="#TBD" title="Ver Perfil">
-                          TBD
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD<br />
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>09:40</p>
-                      <br />
-                      <a href="#TBD" title="Ver Slides [Slideshare]" target="_blank">
-                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-left">
-                      TBD
-                      <p class="autor">
-                        <a href="#TBD" title="Ver Perfil">
-                          TBD
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>10:20</p>
-                      <br />
-                      <a href="#TBD" title="Ver Slides [PDF]" target="_blank">
-                        <img src="images/pdf.png" alt="ícone do PDF" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-left">
-                      TBD
-                      <p class="autor">
-                        <a href="#TBD" title="Ver Perfil">
-                          TBD
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>11:00</p>
-                      <br />
-                      <a href="#TBD" title="Ver Slides [Slideshare]" target="_blank">
-                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-left">
-                      TBD
-                      <p class="autor">
-                        <a href="#TBD" title="Ver Perfil">
-                          TBD
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD    
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>11:40</p>
-                    </div>
-                    <div class="dados">
-                      TBD
-                      <p class="autor">
-                        <a href="#TBD" title="Ver Perfil">
-                          TBD
-                        </a>
-                      </p>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="almoco">
-                  <td>
-                    <div class="horario">
-                      <p>12:00</p>
-                    </div>
-                    <div class="dados">
-                      Almoço
-                      <p class="autor">
-                        Onde os fracos não tem vez!
-                      </p>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table> <!-- Tabela de programação Lab 1 -->
-
-            <table class="grid efeito">
-              <thead>
-                <tr>
-                  <th>&nbsp;</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>13:30</p>
-                      <br />
-                      <a href="#TBD" title="Ver Slide [Prezi]" target="_blank">
-                        <img src="images/slide.png" alt="ícone do Slide" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-right">
-                      TBD
-                      <p class="autor">
-                        <a href="#jTBD" title="Ver Perfil">
-                          TBD
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>14:10</p>
-                      <br />
-                      <a href="#TBD" title="Ver Slide" target="_blank">
-                        <img src="images/slide.png" alt="ícone do Slide" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-right">
-                      TBD
-                      <p class="autor">
-                        <a href="#TBD" title="Ver Perfil">
-                          TBD
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD 
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>14:50</p>
-                      <br />
-                      <a href="#TBD" title="Ver Slides [Slideshare]" target="_blank">
-                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-right">
-                      TBD 
-                      <p class="autor">
-                        <a href="#TBD" title="Ver Perfil">
-                          TBD
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>15:30</p>
-                      <br />
-                      <a href="#TBD" title="Ver Slides [Slideshare]" target="_blank">
-                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-right">
-                      TBD
-                      <p class="autor">
-                        <a href="#TBD" title="Ver Perfil">
-                          TBD
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD 
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>16:10</p>
-                      <br />
-                      <a href="#TBD" title="Ver Slides [Slideshare]" target="_blank">
-                        <img src="images/slideshare.png" width="24" alt="ícone do Slideshare" />
-                      </a>
-                      <a href="#TBD" title="Ver Código [Github]" target="_blank">
-                        <img src="images/github.png" width="22" alt="ícone do Github" />
-                      </a>
-                    </div>
-                    <div class="dados info-palestra-right">
-                      TBD
-                      <p class="autor">
-                        <a href="#TBD" title="Ver Perfil">
-                         TBD
-                        </a>
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        TBD
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="horario">
-                      <p>16:50</p>
-                    </div>
-                    <div class="dados info-palestra-right">
-                      Fishbowl
-                      <p class="autor">
-                        Todos
-                      </p>
-
-                      <div class="info-palestra-dados">
-                        <img src="images/anonimato.jpg" alt="imagem de anonimato representato qualquer pessoa" />
-                        <br />
-                        O momento onde qualquer um pode ser o palestrante compartilhando suas idéias, experiências, tirando dúvidas com interação total do público.
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="encerramento">
-                  <td>
-                    <div class="horario">
-                      <p>17:30</p>
-                    </div>
-                    <div class="dados">
-                      Encerramento com sorteios :D
-                      <p class="autor">
-                        May the force be with you!
-                      </p>
-                      <br />
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table> <!-- Tabela de programação Lab 2 -->
-
-            <div class="grid-efeito-imagem">
-              <img src="images/tabela_efeito.png" alt="imagem de efeito da tabela" />
-            </div>
-            
-          </div> <!-- Tabela -->
-
-          <br /><br /><br /><br /><br /><br />
-          
-        </div> <!-- Programação -->
-
-        <div class="clear"></div>
-
-        <div id="palestrantes">
-
-          <div class="espacador"></div>
-
-          <h2>Palestrantes</h2>
-
-         
-          <a id="otavio_santana"></a>
-          <br />
-          <br />
-          <br />
-          <div class="palestrante">
-
-            <ul>
-              <li class="foto">
-                <img src="images/palestrantes/otavio_santana.jpg" alt="foto do palestrante Otávio Santana" title="Otávio Santana" />
-              </li>
-              <li>
-                <h3>Otávio Santana</h3>
-
-                <a href="https://otaviojava.wordpress.com/" title="Site" class="site">
-                  Site
-                </a>
-
-                <a href="http://twitter.com/otaviojava" title="Twitter" class="twitter">
-                  Twitter
-                </a>
-
-                <a href="http://www.facebook.com/otaviojava" title="Facebook" class="facebook">
-                  Facebook
-                </a>
-
-                <h4>SouJava/Tomibribe</h4>
-
-                <p>
-                 Otávio é engenheiro de software, com mais de seis anos de experiência em desenvolvimento poliglota e em aplicações de alto desempenho, nas áreas de finanças, governo, mídias sociais e e-commerce. Membro do comitê executivo do JCP e de vários Expert Groups de JSRs, fez contribuições ao JBoss Weld, Hibernate e Apache Commons. É Java Champion e recebeu os prêmios JCP Outstanding Award e Duke's Choice Award.
-                </p>
-              </li>
-            </ul>
-          
-          </div> <!-- / palestrante -->
-
-         
-          
-        </div> <!-- Palestrantes -->
-
-        <div class="clear"></div>
-
+</head>
+
+<body>
+
+  <!-- Nevação -->
+  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+ <nav id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+    <li class="sidebar-brand">
+      <a href="#top" onclick=$("#menu-close").click();></a>
+    </li>
+    <li>
+      <a href="#top" onclick=$("#menu-close").click();>Home</a>
+    </li>
+    <li>
+      <a href="#sobre" onclick=$("#menu-close").click();>Sobre o evento</a>
+    </li>
+    </ul>
+  </nav>
+<!-- /Nevação -->
+
+<!-- Header / Banner Principal -->
+<header id="top" class="banner-principal">
+  <div class="container">
+    <div class="row">
+      <img src="assets/img/nosqlba-logo-full.png" class="img-responsive center-block banner-principal-img" alt="Logomarca do evento NoSQL BA">
+    </div>
+  </div>
+</header>
+<!-- /Header / Banner Principal -->
+
+<!-- Mensagem de Boas Vindas -->
+<div class="mensagem-boas-vindas">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p class="lead">Bem vindo ao maior evento de NoSQL da Bahia!</p>
+        <p class="lead">Continue lendo essa página para descobrir porque você não pode perder esse evento!</p>
+        <br />
+        <a target="_blank" href="#">Não perca a chance de garantir logo o seu ingresso!</a>
       </div>
+    </div>
+  </div>
+</div>
+<!-- /Mensagem de Boas Vindas -->
 
-    </div> <!-- Geral -->
-    <script type="text/javascript">
+<!-- Sobre -->
+<section id="sobre" class="bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <br />
+        <h2>Por que NoSQL?</h2>
+        <hr class="small">
+        <p class="lead">
+          Os banco de Dados NOSQL (not only SQL) foram criados, principalmente, para resolver problemas com aplicações web que precisam
+          operar com gigantescas cargas de dados além de poder escalar com grande facilidade. Esses tipos de banco de dados
+          vem sendo usados com muita frequência em redes sociais como Twitter, Facebook, além de persistência em aplicações
+          nas nuvens. Outro ponto importante a citar é a crescente adoção destas novas tecnologias, inclusive em mercados
+          mais conservadores, tais como instituições financeiras e agências governamentais, seus motivos são diversos normalmente
+          para solucionar problemas com flexibilidade, escalabilidade, latência e performance. Para demonstrar, compartilhar
+          essas tecnologias foi criado o evento NOSQL-BA.
+        </p>
+      </div>
+    </div>
+    <hr class="small">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="service-item text-center">
+          <h4>
+            <strong>Mercado</strong>
+          </h4>
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-bar-chart fa-stack-1x text-primary"></i>
+          </span>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent
+            vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Cevadis im ampola pa arma uma pindureta.
+            Quem num gosti di mum que vai caçá sua turmis!</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="service-item text-center">
+          <h4>
+            <strong>Networking</strong>
+          </h4>
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-users fa-stack-1x text-primary"></i>
+          </span>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent
+            vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Cevadis im ampola pa arma uma pindureta.
+            Quem num gosti di mum que vai caçá sua turmis!</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="service-item text-center">
+          <h4>
+            <strong>Vagas</strong>
+          </h4>
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rocket fa-stack-1x text-primary"></i>
+          </span>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent
+            vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Cevadis im ampola pa arma uma pindureta.
+            Quem num gosti di mum que vai caçá sua turmis!</p>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6">
+        <div class="service-item text-center">
+          <h4>
+            <strong>Participantes</strong>
+          </h4>
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-bullhorn fa-stack-1x text-primary"></i>
+          </span>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Praesent
+            vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Cevadis im ampola pa arma uma pindureta.
+            Quem num gosti di mum que vai caçá sua turmis!</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <br />
+</section>
+<!-- /Sobre -->
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-29869298-1']);
-      _gaq.push(['_trackPageview']);
+<!-- Mensagem de chamada para compra de ingresso -->
+<div class="mensagem-boas-vindas">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3>VENHA PARTICIPAR DO NOSQL-BA</h3>
+        <br />
+        <a href="#" class="btn btn-lg btn-dark">Inscreva-se!</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Mensagem de chamada para compra de ingresso -->
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+<!-- Sobre -->
+<section id="precisaDeUmID" class="bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <br />
+        <h2>Mussum Ipsum</h2>
+        <hr class="small">
+        <p class="lead">
+          Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis. Admodum accumsan disputationi eu sit.
+          Vide electram sadipscing et per. Viva Forevis aptent taciti sociosqu ad litora torquent Em pé sem cair, deitado sem dormir,
+          sentado sem cochilar e fazendo pose. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+          Pra lá , depois divoltis porris, paradis. Per aumento de cachacis, eu reclamis. Interagi no mé, cursus quis, vehicula ac
+          nisi.
+        </p>
+      </div>
+    </div>
+  <br />
+</section>
+<!-- /Sobre -->
 
-    </script>
-  </body>
+<!-- Mapa com localização -->
+<section class="mapa">
+  <iframe  width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.5448068246!2d-38.413777!3d-12.9471213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc97154511237246a!2sUCSal+Campus+de+Pitua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1484271711889" 
+   ></iframe>
+  <br />
+  <small>
+    <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.5448068246!2d-38.413777!3d-12.9471213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc97154511237246a!2sUCSal+Campus+de+Pitua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1484271711889"></a>
+   </small>
+  </iframe>
+</section>
+<!-- /Mapa com localização -->
+
+<!-- Footer -->
+<footer>
+  <div class="container" >
+    <div class="row">
+      <hr>
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <ul class="list-inline">
+          <li>
+            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+          </li>
+        </ul>
+        <br/>
+        <p class="text-muted">Feito com
+          <span style="color: red" class=" fa fa-heart"></span> por
+<a href="https://twitter.com/mmalaquias1" target="_blank">Mateus Malaquias</a></p>
+</div>
+</div>
+</div>
+<a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+</footer>
+<!-- /Footer -->
+
+<!-- jQuery -->
+<script src="assets/js/jquery.js"></script>
+<!-- Bootstrap Core -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Nosso arquivo JS personalizado -->
+<script src="assets/js/main.js"></script>
+</body>
+
 </html>
