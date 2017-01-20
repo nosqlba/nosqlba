@@ -10,7 +10,8 @@
 => BOTÕES
 => MENSAGEM DE BOAS VINDAS
 => MENU LATERAL (ACIONADO PELO HAMBURGER)
-=> ESTILOS DO MAPA DE LOCALIZAÇÃO          
+=> ESTILOS DO MAPA DE LOCALIZAÇÃO
+=> INGRESSOS          
 ===========================*/
 
 /*====================
@@ -239,4 +240,39 @@ footer hr:after{
 }
 .mapa iframe {
     pointer-events: none;
+}
+/*====================
+	=> INGRESSOS
+==========================*/
+.quadro-ingressos .item {
+	padding: 20px 0 40px;
+	border: 1px solid #b7b7b7;
+	text-align: center;
+}
+.quadro-ingressos .item h3 {
+	margin-top: 0;
+	padding: 12px 10px 10px;
+	font-weight: bold;
+	background: #f1f1f1;
+	text-transform: uppercase;
+	color: #636363;
+	font-size: 20px;
+}
+.quadro-ingressos .item p.preco {
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 60px;
+	border-bottom: 1px solid #e3e3e3;
+	color: #8ab928;
+}
+.quadro-ingressos .item p.preco span {
+	font-size: 25px;
+	font-weight: normal;
+}
+.quadro-ingressos .item p.preco small {
+	font-size: 22px;
+	font-weight: normal;
+}
+.quadro-ingressos .btn-dark {
+    margin-top: 5%;
 }
