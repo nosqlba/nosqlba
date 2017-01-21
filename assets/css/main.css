@@ -8,7 +8,7 @@
 => FOOTER
 => BANNER PRINCIPAL
 => BOTÕES
-=> MENSAGEM DE BOAS VINDAS
+=> CRIAR BLOCO COM FUNDO BRANCO ENTRE SESSÕES
 => MENU LATERAL (ACIONADO PELO HAMBURGER)
 => ESTILOS DO MAPA DE LOCALIZAÇÃO
 => INGRESSOS          
@@ -148,9 +148,9 @@ footer hr:after{
     background-color: rgba(255,255,255,0.8);
 }
 /*=============================
-	=> MENSAGEM DE BOAS VINDAS
+	=> CRIAR BLOCO COM FUNDO BRANCO ENTRE SESSÕES
 ===============================*/
-.mensagem-boas-vindas {
+.criar-bloco-entre-sessoes {
     padding: 3% 0;
 }
 /*===============================================
