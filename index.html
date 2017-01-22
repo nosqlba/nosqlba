@@ -50,6 +50,18 @@
 <li>
   <a href="#sobre" onclick=$("#menu-close").click();>Sobre o evento</a>
 </li>
+<li>
+  <a href="#palestrantes" onclick=$("#menu-close").click();>Palestrantes</a>
+</li>
+<li>
+  <a href="#programacao" onclick=$("#menu-close").click();>Programação</a>
+</li>
+<li>
+  <a href="#inscricao" onclick=$("#menu-close").click();>Inscricao</a>
+</li>
+<li>
+  <a href="#localizacao" onclick=$("#menu-close").click();>Localização</a>
+</li>
 </ul>
 </nav>
 <!-- /Nevação -->
@@ -170,8 +182,54 @@
 </div>
 <!-- /Mensagem de chamada para compra de ingresso -->
 
-<!-- Sobre -->
-<section id="precisaDeUmID" class="bg-primary">
+<!-- palestrantes -->
+<section id="palestrantes" class="bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <br />
+        <h2 class="text-uppercase">Palestrantes & Talks</h2>
+        <hr class="small">
+      </div>
+      <div class="row">
+				<div class="col-sm-3 col-md-3">
+					<div class="palestrante">
+						<div class="media"><p><img src="assets/img/palestrantes/Julio_M_Faerman.jpg" alt=""></p></div>
+						<div class="info">
+							<p class="nome">Julio M Faerman</p>
+							<p class="empresa">Amazon Cloud</p>
+              </br>
+							<p class="text-justify lead"><mark>Engenheiro de software e educador, fascinado em entender como e porquê aprendemos.
+                 Na Amazon Web Services é responsável pelo relacionamento com desenvolvedores, levando as 
+                 novidades da computação em nuvem e trazendo as experiências de quem a utiliza. 
+                 Também é fundador da Craftware, uma startup para inovação em educação. Antes disso, 
+                 trabalhou na Red Hat, na Borland e em grandes organizações de governo e telecom.</mark></p>
+							<div class="redes-sociais">
+								<a href="https://twitter.com/jmfaerman" target="_blank"><i class="fa fa-twitter"></i></a>
+								<a href="https://www.linkedin.com/in/jmfaerman" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<a href="https://github.com/jfaerman" target="_blank"><i class="fa fa-github"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+      
+    </div>
+  </div>
+    <br />
+</section>
+<!-- /palestrantes -->
+
+<!-- SOMENTE ESPAÇO EM BRANCO -->
+<div class="criar-bloco-entre-sessoes">
+  <div class="container">
+    <div class="row"> </div>
+  </div>
+</div>
+<!-- /SOMENTE ESPAÇO EM BRANCO -->
+
+<!-- Programação -->
+<section id="programacao" class="bg-primary">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -185,7 +243,7 @@
     </div>
     <br />
 </section>
-<!-- /Sobre -->
+<!-- /Programação -->
 
 <!-- Mensagem de chamada para compra de ingresso -->
 <div class="criar-bloco-entre-sessoes">
@@ -212,9 +270,6 @@
       <div class="col-sm-2 col-md-2">
         <img src="assets/img/apoiadores/ucsal-4.jpg" class="img-responsive" alt="UCSAL (Universidade Católica do Salvador)">
       </div>
-      <div class="col-sm-2 col-md-2">
-        <img src="assets/img/apoiadores/logo_infoucsal.jpg" class="img-responsive" alt="InfoUcsal">
-      </div>
     </div>
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -225,16 +280,19 @@
       <div class="col-sm-2 col-md-2">
         <img src="assets/img/apoiadores/javabahia-logo.png" class="img-responsive" alt="Java Bahia logomarca">
       </div>
+      <div class="col-sm-2 col-md-2">
+        <img src="assets/img/apoiadores/logo_infoucsal.jpg" class="img-responsive" alt="UCSAL logomarca">
+      </div>
     </div>
   </div>
 </div>
 <!-- /Mensagem de chamada para compra de ingresso -->
 
-<!-- Ingressos -->
+<!-- Inscrição -->
 <section id="inscricao" class="bg-primary">
   <div class="row">
     <br />
-    <h2 class="text-center text-uppercase">Ingressos</h2>
+    <h2 class="text-center text-uppercase">Inscrição</h2>
     <hr class="small">
     <div class="quadro-ingressos">
       <div class="col-sm-4 col-md-4">
@@ -254,7 +312,7 @@
       <div class="col-sm-4 col-md-4">
         <div class="item">
           <h3>Palestras (sabado)</h3>
-          <p class="preco"><span>R$</span>55,00</p>
+          <p class="preco"><span>R$</span>66,00</p>
           <a target="_blank" class="btn btn-lg btn-dark" href="http://inscricao.nosqlba.org/">Inscreva-se</a>
         </div>
       </div>
@@ -265,15 +323,15 @@
 <!-- /Ingressos -->
 
 <!-- SOMENTE ESPAÇO EM BRANCO PARA SEPARAR O MAPA -->
-<div class="mensagem-boas-vindas">
+<div class="criar-bloco-entre-sessoes">
   <div class="container">
-    <div class="row"></div>
+    <div class="row"> </div>
   </div>
 </div>
 <!-- /SOMENTE ESPAÇO EM BRANCO PARA SEPARAR O MAPA -->
 
 <!-- Mapa com localização -->
-<section class="mapa">
+<section id="localizacao" class="mapa">
   <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.5448068246!2d-38.413777!3d-12.9471213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc97154511237246a!2sUCSal+Campus+de+Pitua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1484271711889"></iframe>
   <br />
   <small>
