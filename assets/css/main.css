@@ -11,7 +11,8 @@
 => CRIAR BLOCO COM FUNDO BRANCO ENTRE SESSÕES
 => MENU LATERAL (ACIONADO PELO HAMBURGER)
 => ESTILOS DO MAPA DE LOCALIZAÇÃO
-=> INGRESSOS          
+=> INSCRIÇÃO   
+=> PALESTRANTES E TALKS       
 ===========================*/
 
 /*====================
@@ -242,7 +243,7 @@ footer hr:after{
     pointer-events: none;
 }
 /*====================
-	=> INGRESSOS
+	=> INSCRIÇÃO
 ==========================*/
 .quadro-ingressos .item {
 	padding: 20px 0 40px;
@@ -275,4 +276,45 @@ footer hr:after{
 }
 .quadro-ingressos .btn-dark {
     margin-top: 5%;
+}
+/*====================
+	=> PALESTRANTES E TALKS
+==========================*/
+#palestrantes {
+	padding-bottom: 3%;
+}
+#palestrantes .palestrante {
+	margin-bottom: 3%;
+	background: #fff;
+	box-shadow: 0 0 5px 0px #bbb;
+}
+#palestrantes .palestrante .info {
+	padding: 5px 20px 10px;
+}
+#palestrantes .palestrante .info p.nome {
+	color: #222;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+#palestrantes .palestrante .info p.empresa {
+	font-size: 12px;
+	font-style: italic;
+	color: #222;
+}
+#palestrantes .redes-sociais {
+    margin-top: 4%;
+	margin-bottom: 10px;
+}
+#palestrantes .redes-sociais a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid;
+}
+#palestrantes .redes-sociais a:hover {
+	background-color: #8B0000;
+	color: #fff;
 }
