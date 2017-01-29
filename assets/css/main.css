@@ -332,3 +332,197 @@ footer hr:after{
 /*====================
 	=> PROGRAMAÇÃO DA CONFERENCIA
 ==========================*/
+
+.conf-programacao{
+	position:relative;
+}
+.conf-programacao img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+.conf-programacao:after{
+	display:block;
+	clear:both;
+	content:'';
+}
+.conf-programacao-tabs{
+	position:relative;
+	margin:-97px auto 0;
+	background:#fff;
+}
+.conf-programacao-tabs .nav-tabs{
+	border-bottom:1px solid #e6e6e6;
+	text-align:center;
+	font:20px/30px 'Montserrat', Arial, Helvetica, sans-serif;
+	position:relative;
+	z-index:1;
+}
+.conf-programacao-tabs .nav-tabs > li > a {
+	border-right: 1px solid #e6e6e6;
+	border-radius:0;
+	line-height:30px;
+	margin-right: 0;
+	color:#333;
+	min-width:200px;
+	position:relative;
+	padding:18px 10px 19px;
+	transition:all 0.5s ease 0s;
+	-moz-transition:all 0.5s ease 0s;
+	-webkit-transition:all 0.5s ease 0s;
+	outline:none;
+}
+.conf-programacao-tabs .nav-tabs > li > a span{
+	display:block;
+	font-size:26px;
+}
+.conf-programacao-tabs .nav-tabs > li.active > a,
+.conf-programacao-tabs .nav-tabs > li.active > a:hover,
+.conf-programacao-tabs .nav-tabs > li.active > a:focus{
+	color:#fff;
+    background-color: #B22222;
+}
+.conf-programacao-tabs .nav-tabs > li.active > a:after,
+.conf-programacao-tabs .nav-tabs > li.active > a:hover:after,
+.conf-programacao-tabs .nav-tabs > li.active > a:focus:after{
+	position:absolute;
+	content:'';
+	height:15px;
+	width:15px;
+	transform:rotate(45deg);
+	left:0px;
+	right:0px;
+	margin:auto;
+	bottom:-7px;
+}
+.conf-programacao-tabs .panel.panel-default{
+	border:none;
+	border-radius:0;
+	box-shadow:none;
+	position:relative;
+	padding:60px 0 30px;
+}
+.conf-programacao-tabsletabs .panel.panel-default:before{
+	position:absolute;
+	content:'';
+	border-left:2px dashed #ccc;
+	left:25px;
+	top:0;
+	bottom:0;
+	width:0;
+	height:100%;
+}
+.conf-programacao-tabs .panel-heading{
+	background:none;
+	border:none;
+	position:relative;
+}
+.conf-programacao-tabs .panel-heading:before{
+	content:"\f107";
+	position:absolute;
+	right:20px;
+	top:50%;
+	margin:-10px 0px 0px 0px;
+	font-size:20px;
+	color:#333;
+	font-family:FontAwesome;
+}
+.conf-programacao-tabs .panel-title{
+	font-size:26px;
+	line-height:30px;
+	border-bottom:1px solid #e6e6e6;
+	padding:0 0 10px;
+}
+.conf-programacao-tabs .panel-group .panel-heading + .panel-collapse > .panel-body{
+	border:none;
+	color:#666;
+}
+.conf-programacao-tabs .panel-body p{margin:0 0 20px;}
+.conf-programacao-tabs .announcer{
+	display:block;
+	font:20px/24px 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.conf-programacao-palestra-bloco{
+	float:left;
+	width:100%;
+	position:relative;
+	padding:20px 30px;	
+}
+.conf-programacao-palestra-horario{
+	float:left;
+	width:15%;
+	position:relative;	
+}
+.conf-programacao-palestra-horario h5{
+	color:#fff;
+	font-size:18px;
+	font-weight:normal;	
+}
+.conf-programacao-palestra-bloco-palestrante{
+	float:left;
+	position:relative;
+	width:85%;	
+}
+.conf-programacao-palestra-bloco-palestrante:before{
+	content:"";
+	position:absolute;
+	width:20px;
+	height:20px;
+	left:-46px;
+	top:0px;
+	border-radius:100%;
+	border:2px solid #d3d3d3;	
+}
+.conf-programacao-palestra-bloco-palestrante:after{
+	content:"";
+	position:absolute;
+	width:2px;
+	top:20px;
+	left:-37px;
+	bottom:-40px;
+	background-color:#d3d3d3;	
+}
+.conf-programacao-palestra-bloco-palestrante-titulo i{
+	margin-left:15px;	
+}
+.conf-programacao-palestra-bloco-palestrante-titulo{
+	float:left;
+	position:relative;
+	width:100%;
+	margin:0px 0px 10px;
+	cursor:pointer;	
+}
+.conf-programacao-palestra-bloco-palestrante-titulo h5{
+	display:inline-block;
+	color:#fff;
+	font-weight:600;
+	font-size:20px;	
+}
+.conf-programacao-palestra-bloco-palestrante-titulo i{
+	font-weight:bold;
+	font-size:16px;	
+}
+.conf-programacao-palestra-bloco-palestrante-descricao,
+.conf-programacao-palestra-bloco-palestrante-descricao-esqueleto{
+	float:left;
+	width:100%;
+	position:relative;	
+}
+.conf-programacao-palestra-bloco-palestrante-descricao p{
+	font-size:16px;
+	color:#d3d3d3;
+	line-height:27px;	
+}
+.conf-programacao-palestra-bloco-palestrante-nome{
+	float:none;
+	width:auto;
+	padding:0px 0px 0px 75px;
+	position:relative;
+}
+.conf-programacao-palestra-bloco-palestrante-nome span{
+	font-size:16px;
+	font-style:italic;
+	display:block;
+	font-weight:600;	
+    color:#fff;
+}
