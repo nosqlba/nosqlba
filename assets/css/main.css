@@ -12,7 +12,8 @@
 => MENU LATERAL (ACIONADO PELO HAMBURGER)
 => ESTILOS DO MAPA DE LOCALIZAÇÃO
 => INSCRIÇÃO   
-=> PALESTRANTES E TALKS       
+=> PALESTRANTES E TALKS
+=> PROGRAMAÇÃO DA CONFERENCIA
 ===========================*/
 
 /*====================
@@ -318,3 +319,6 @@ footer hr:after{
 	background-color: #8B0000;
 	color: #fff;
 }
+/*====================
+	=> PROGRAMAÇÃO DA CONFERENCIA
+==========================*/
