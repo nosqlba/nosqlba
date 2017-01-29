@@ -13,6 +13,7 @@
 => ESTILOS DO MAPA DE LOCALIZAÇÃO
 => INSCRIÇÃO   
 => PALESTRANTES E TALKS
+=> LOGO
 => PROGRAMAÇÃO DA CONFERENCIA
 ===========================*/
 
@@ -319,6 +320,15 @@ footer hr:after{
 	background-color: #8B0000;
 	color: #fff;
 }
+/*====================
+	=> LOGO
+==========================*/
+.logo {
+    height: 75px; 
+    width: 90px; 
+    overflow: hidden;
+}
+
 /*====================
 	=> PROGRAMAÇÃO DA CONFERENCIA
 ==========================*/
