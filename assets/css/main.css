@@ -282,6 +282,7 @@ footer hr:after{
 ==========================*/
 #palestrantes {
 	padding-bottom: 3%;
+    text-align: center;
 }
 #palestrantes .palestrante {
 	margin-bottom: 3%;
@@ -323,4 +324,9 @@ footer hr:after{
     height: 75px; 
     width: 90px; 
     overflow: hidden;
+}
+
+.foto-palestrante{
+    height: 350px;
+    width: 450px;
 }
