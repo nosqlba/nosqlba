@@ -50,3 +50,17 @@ $(function () {
         }
     });
 });
+
+//Owl Carousel
+$("#id-owl-carousel").owlCarousel({
+    navigation: false, // Show next and prev buttons
+    slideSpeed: 300,
+    paginationSpeed: 400,
+    responsiveRefreshRate: 200,
+    responsiveBaseWidth: window,
+    items: 4,
+    itemsMobile: [479, 1],
+    stopOnHover: true,
+    pagination: true,
+    navigationText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"]
+});
