@@ -455,7 +455,6 @@ footer hr:after{
 }
 .conf-programacao-palestra-horario{
 	float:left;
-	width:15%;
 	position:relative;	
 }
 .conf-programacao-palestra-horario h5{
@@ -464,16 +463,15 @@ footer hr:after{
 	font-weight:normal;	
 }
 .conf-programacao-palestra-bloco-palestrante{
-	float:left;
+	padding-left:110px;
 	position:relative;
-	width:85%;	
 }
 .conf-programacao-palestra-bloco-palestrante:before{
 	content:"";
 	position:absolute;
 	width:20px;
 	height:20px;
-	left:-46px;
+	left:65px;
 	top:0px;
 	border-radius:100%;
 	border:2px solid #d3d3d3;	
@@ -483,7 +481,7 @@ footer hr:after{
 	position:absolute;
 	width:2px;
 	top:20px;
-	left:-37px;
+	left:74px;
 	bottom:-40px;
 	background-color:#d3d3d3;	
 }
@@ -509,7 +507,6 @@ footer hr:after{
 }
 .conf-programacao-palestra-bloco-palestrante-descricao,
 .conf-programacao-palestra-bloco-palestrante-descricao-esqueleto{
-	float:left;
 	width:100%;
 	position:relative;	
 }
@@ -695,4 +692,56 @@ footer hr:after{
 .redes-sociais a:hover {
 	background-color: #8B0000;
 	color: #fff;
+}
+.conf-programacao-tabs .nav-tabs{
+	text-align: center;
+}
+.conf-programacao-tabs .nav-tabs>li{
+	float:none;
+	display:inline-block;
+}
+
+/*
+* Quadro de programação - mobile
+*/
+@media (max-width: 767px) {
+	.conf-programacao-palestra-bloco{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.conf-programacao-palestra-bloco-palestrante {
+	    padding-left: 70px;
+	}
+
+	.conf-programacao-palestra-bloco .conf-programacao-palestra-horario h5{
+	    font-size:14px;
+	    line-height:8px;
+	    font-weight: bold;
+	}
+	
+	.conf-programacao-palestra-bloco-palestrante:before{
+		width: 10px;
+		height: 10px;
+    	left: 50px;
+	}
+	.conf-programacao-palestra-bloco-palestrante:after{
+		width:2px;
+		top: 9px;
+    	left: 54px;
+	}
+	
+	.conf-programacao-palestra-bloco-palestrante-titulo{
+		margin-top:-6px;
+	} 
+
+	.conf-programacao-palestra-bloco-palestrante-titulo h5 {
+	    font-size: 18px;
+	}
+
+	.conf-programacao-tabs .nav-tabs>li {
+	    float: none; 
+	    display: block;
+	    width: 100%;
+	    border-bottom: 1px solid #ccc;
+	}
 }
