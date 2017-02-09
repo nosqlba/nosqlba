@@ -41,8 +41,12 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+
+/* Dude, why do you need this? o_o */
+/* 	font-size: 100%;
 	font: inherit;
+*/
+
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -745,3 +749,20 @@ footer hr:after{
 	    border-bottom: 1px solid #ccc;
 	}
 }
+
+
+/******* Padding Helpers *******/
+/*		Padding-All					*/		
+.p-0 { padding: 0px; } .p-5 { padding: 5px; } .p-10 { padding: 10px; } .p-15 { padding: 15px; } .p-20 { padding: 20px; } .p-25 { padding: 25px; } .p-30 { padding: 30px; } .p-35 { padding: 35px; }
+/*		padding-left					*/ 	
+.pl-3  { padding-left: 3px; } .pl-5  { padding-left: 5px; } .pl-10 { padding-left: 10px; } .pl-15 { padding-left: 15px; } .pl-20 { padding-left: 20px; } .pl-25 { padding-left: 25px; } .pl-30 { padding-left: 30px; } 
+/*		padding-right				*/	
+.pr-3  { padding-right: 3px; } .pr-5  { padding-right: 5px; } .pr-10 { padding-right: 10px; } .pr-15 { padding-right: 15px; } .pr-20 { padding-right: 20px; } .pr-25 { padding-right: 25px; } .pr-30 { padding-right: 30px; } 
+/*		padding-Horizontal			*/	
+.ph-5 	{ padding-left: 5px; padding-right: 5px; } .ph-10 { padding-left: 10px; padding-right: 10px; } .ph-15 { padding-left: 15px; padding-right: 15px; } .ph-20 { padding-left: 20px; padding-right: 20px; } .ph-25 { padding-left: 25px; padding-right: 25px; } .ph-30 { padding-left: 30px; padding-right: 30px }
+/*		padding Vertical				*/	
+.pv-5 	{ padding: 5px 0; } .pv-10 { padding: 10px 0; } .pv-15 { padding: 15px 0; } .pv-20 { padding: 20px 0; } .pv-25 { padding: 25px 0px; } .pv-30 { padding:30px 0; } 
+/*		padding-top			*/	
+.pt-3  { padding-top: 3px; } .pt-5  { padding-top: 5px; } .pt-10 { padding-top: 10px; } .pt-15 { padding-top: 15px; } .pt-20 { padding-top: 20px; } .pt-25 { padding-top: 25px; } .pt-30 { padding-top: 30px; }
+/*		padding-bottom		*/	
+.pb-3  { padding-bottom: 3px; } .pb-5  { padding-bottom: 5px; } .pb-10 { padding-bottom: 10px; } .pb-15 { padding-bottom: 15px; } .pb-20 { padding-bottom: 20px; } .pb-25 { padding-bottom: 25px; } .pb-30 { padding-bottom: 30px; }
