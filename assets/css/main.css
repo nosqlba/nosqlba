@@ -330,8 +330,8 @@ footer hr:after{
 	=> LOGO
 ==========================*/
 .logo {
-    height: 75px; 
-    width: 90px; 
+    height: 150px; 
+    width: 200px; 
     overflow: hidden;
 }
 
