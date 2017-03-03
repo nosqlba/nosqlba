@@ -11,7 +11,7 @@
 => CRIAR BLOCO COM FUNDO BRANCO ENTRE SESSÕES
 => MENU LATERAL (ACIONADO PELO HAMBURGER)
 => ESTILOS DO MAPA DE LOCALIZAÇÃO
-=> INSCRIÇÃO   
+=> INSCRIÇÃO
 => PALESTRANTES E TALKS
 => LOGO
 => PROGRAMAÇÃO DA CONFERENCIA
@@ -21,7 +21,7 @@
 /*====================
 	=> RESET CSS
 ==========================*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -34,8 +34,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -50,7 +50,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -94,18 +94,18 @@ footer {
     padding: 0 0;
 }
 footer hr{
-   border-top: 1px dashed #8c8b8b; 
+   border-top: 1px dashed #8c8b8b;
 }
 footer hr:after{
-  content: '\002702'; 
-  display: inline-block; 
-  position: relative; 
-  top: -12px; 
-  left: 40px; 
-  padding: 0 3px; 
-  background: #f0f0f0; 
-  color: #8c8b8b; 
-  font-size: 18px; 
+  content: '\002702';
+  display: inline-block;
+  position: relative;
+  top: -12px;
+  left: 40px;
+  padding: 0 3px;
+  background: #f0f0f0;
+  color: #8c8b8b;
+  font-size: 18px;
 }
 #to-top {
   display: none;
@@ -163,7 +163,7 @@ footer hr:after{
 }
 /*===============================================
 	=> MENU LATERAL (ACIONADO PELO HAMBURGER)
-================================================*/ 
+================================================*/
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -234,10 +234,10 @@ footer hr:after{
 }
 .toggle {
     margin: 5px 5px 0 0;
-} 
+}
 /*===============================================
-	=> ESTILOS DO MAPA DE LOCALIZAÇÃO 
-================================================*/ 
+	=> ESTILOS DO MAPA DE LOCALIZAÇÃO
+================================================*/
 .mapa {
     height: 500px;
 }
@@ -330,9 +330,10 @@ footer hr:after{
 	=> LOGO
 ==========================*/
 .logo {
-    height: 150px; 
-    width: 200px; 
-    overflow: hidden;
+	height: 125px;
+    border: none;
+    display: inline-flex;
+    transform: scale(.7);
 }
 
 .foto-palestrante{
@@ -455,16 +456,16 @@ footer hr:after{
 	float:left;
 	width:100%;
 	position:relative;
-	padding:20px 30px;	
+	padding:20px 30px;
 }
 .conf-programacao-palestra-horario{
 	float:left;
-	position:relative;	
+	position:relative;
 }
 .conf-programacao-palestra-horario h5{
 	color:#fff;
 	font-size:18px;
-	font-weight:normal;	
+	font-weight:normal;
 }
 .conf-programacao-palestra-bloco-palestrante{
 	padding-left:110px;
@@ -478,7 +479,7 @@ footer hr:after{
 	left:65px;
 	top:0px;
 	border-radius:100%;
-	border:2px solid #d3d3d3;	
+	border:2px solid #d3d3d3;
 }
 .conf-programacao-palestra-bloco-palestrante:after{
 	content:"";
@@ -487,37 +488,37 @@ footer hr:after{
 	top:20px;
 	left:74px;
 	bottom:-40px;
-	background-color:#d3d3d3;	
+	background-color:#d3d3d3;
 }
 .conf-programacao-palestra-bloco-palestrante-titulo i{
-	margin-left:15px;	
+	margin-left:15px;
 }
 .conf-programacao-palestra-bloco-palestrante-titulo{
 	float:left;
 	position:relative;
 	width:100%;
 	margin:0px 0px 10px;
-	cursor:pointer;	
+	cursor:pointer;
 }
 .conf-programacao-palestra-bloco-palestrante-titulo h5{
 	display:inline-block;
 	color:#fff;
 	font-weight:600;
-	font-size:20px;	
+	font-size:20px;
 }
 .conf-programacao-palestra-bloco-palestrante-titulo i{
 	font-weight:bold;
-	font-size:16px;	
+	font-size:16px;
 }
 .conf-programacao-palestra-bloco-palestrante-descricao,
 .conf-programacao-palestra-bloco-palestrante-descricao-esqueleto{
 	width:100%;
-	position:relative;	
+	position:relative;
 }
 .conf-programacao-palestra-bloco-palestrante-descricao p{
 	font-size:16px;
 	color:#d3d3d3;
-	line-height:27px;	
+	line-height:27px;
 }
 .conf-programacao-palestra-bloco-palestrante-nome{
 	float:none;
@@ -529,11 +530,11 @@ footer hr:after{
 	font-size:16px;
 	font-style:italic;
 	display:block;
-	font-weight:600;	
+	font-weight:600;
     color:#fff;
 }
 /*====================
-	=> CAROUSEL 
+	=> CAROUSEL
 ==========================*/
 /**
  * 	Core Owl Carousel CSS File
@@ -722,7 +723,7 @@ footer hr:after{
 	    line-height:8px;
 	    font-weight: bold;
 	}
-	
+
 	.conf-programacao-palestra-bloco-palestrante:before{
 		width: 10px;
 		height: 10px;
@@ -733,17 +734,17 @@ footer hr:after{
 		top: 9px;
     	left: 54px;
 	}
-	
+
 	.conf-programacao-palestra-bloco-palestrante-titulo{
 		margin-top:-6px;
-	} 
+	}
 
 	.conf-programacao-palestra-bloco-palestrante-titulo h5 {
 	    font-size: 18px;
 	}
 
 	.conf-programacao-tabs .nav-tabs>li {
-	    float: none; 
+	    float: none;
 	    display: block;
 	    width: 100%;
 	    border-bottom: 1px solid #ccc;
@@ -752,17 +753,17 @@ footer hr:after{
 
 
 /******* Padding Helpers *******/
-/*		Padding-All					*/		
+/*		Padding-All					*/
 .p-0 { padding: 0px; } .p-5 { padding: 5px; } .p-10 { padding: 10px; } .p-15 { padding: 15px; } .p-20 { padding: 20px; } .p-25 { padding: 25px; } .p-30 { padding: 30px; } .p-35 { padding: 35px; }
-/*		padding-left					*/ 	
-.pl-3  { padding-left: 3px; } .pl-5  { padding-left: 5px; } .pl-10 { padding-left: 10px; } .pl-15 { padding-left: 15px; } .pl-20 { padding-left: 20px; } .pl-25 { padding-left: 25px; } .pl-30 { padding-left: 30px; } 
-/*		padding-right				*/	
-.pr-3  { padding-right: 3px; } .pr-5  { padding-right: 5px; } .pr-10 { padding-right: 10px; } .pr-15 { padding-right: 15px; } .pr-20 { padding-right: 20px; } .pr-25 { padding-right: 25px; } .pr-30 { padding-right: 30px; } 
-/*		padding-Horizontal			*/	
+/*		padding-left					*/
+.pl-3  { padding-left: 3px; } .pl-5  { padding-left: 5px; } .pl-10 { padding-left: 10px; } .pl-15 { padding-left: 15px; } .pl-20 { padding-left: 20px; } .pl-25 { padding-left: 25px; } .pl-30 { padding-left: 30px; }
+/*		padding-right				*/
+.pr-3  { padding-right: 3px; } .pr-5  { padding-right: 5px; } .pr-10 { padding-right: 10px; } .pr-15 { padding-right: 15px; } .pr-20 { padding-right: 20px; } .pr-25 { padding-right: 25px; } .pr-30 { padding-right: 30px; }
+/*		padding-Horizontal			*/
 .ph-5 	{ padding-left: 5px; padding-right: 5px; } .ph-10 { padding-left: 10px; padding-right: 10px; } .ph-15 { padding-left: 15px; padding-right: 15px; } .ph-20 { padding-left: 20px; padding-right: 20px; } .ph-25 { padding-left: 25px; padding-right: 25px; } .ph-30 { padding-left: 30px; padding-right: 30px }
-/*		padding Vertical				*/	
-.pv-5 	{ padding: 5px 0; } .pv-10 { padding: 10px 0; } .pv-15 { padding: 15px 0; } .pv-20 { padding: 20px 0; } .pv-25 { padding: 25px 0px; } .pv-30 { padding:30px 0; } 
-/*		padding-top			*/	
+/*		padding Vertical				*/
+.pv-5 	{ padding: 5px 0; } .pv-10 { padding: 10px 0; } .pv-15 { padding: 15px 0; } .pv-20 { padding: 20px 0; } .pv-25 { padding: 25px 0px; } .pv-30 { padding:30px 0; }
+/*		padding-top			*/
 .pt-3  { padding-top: 3px; } .pt-5  { padding-top: 5px; } .pt-10 { padding-top: 10px; } .pt-15 { padding-top: 15px; } .pt-20 { padding-top: 20px; } .pt-25 { padding-top: 25px; } .pt-30 { padding-top: 30px; }
-/*		padding-bottom		*/	
+/*		padding-bottom		*/
 .pb-3  { padding-bottom: 3px; } .pb-5  { padding-bottom: 5px; } .pb-10 { padding-bottom: 10px; } .pb-15 { padding-bottom: 15px; } .pb-20 { padding-bottom: 20px; } .pb-25 { padding-bottom: 25px; } .pb-30 { padding-bottom: 30px; }
