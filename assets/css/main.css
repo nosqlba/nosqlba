@@ -254,7 +254,7 @@ footer hr:after{
 ==========================*/
 .quadro-ingressos .item {
 	padding: 20px 0 40px;
-	border: 1px solid #b7b7b7;
+	background-color: 'white';
 	text-align: center;
 }
 .quadro-ingressos .item h3 {
@@ -271,7 +271,7 @@ footer hr:after{
 	font-weight: bold;
 	line-height: 60px;
 	border-bottom: 1px solid #e3e3e3;
-	color: #8ab928;
+	color: #337ab7;
 }
 .quadro-ingressos .item p.preco span {
 	font-size: 25px;
@@ -283,6 +283,7 @@ footer hr:after{
 }
 .quadro-ingressos .btn-dark {
     margin-top: 5%;
+	background-color: '#8ab928'
 }
 /*====================
 	=> PALESTRANTES E TALKS
