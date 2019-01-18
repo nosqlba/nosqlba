@@ -276,6 +276,10 @@ footer hr:after{
 	font-size: 25px;
 	font-weight: normal;
 }
+.quadro-ingressos p.lote span {
+	font-size: 30px;
+	font-weight: normal;
+}
 .quadro-ingressos .item p.preco small {
 	font-size: 22px;
 	font-weight: normal;
