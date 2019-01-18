@@ -1,0 +1,768 @@
+@charset "utf-8";
+/*---------------------------------------------------------------------*/
+/*Esse é o arquivo de estilo central do projeto, utilize e mantenha o indice atualizado*/
+/*-------------------------------------------------------------*/
+/*===========================
+=> RESET CSS
+=> ESTILOS GLOBAIS
+=> FOOTER
+=> BANNER PRINCIPAL
+=> BOTÕES
+=> CRIAR BLOCO COM FUNDO BRANCO ENTRE SESSÕES
+=> MENU LATERAL (ACIONADO PELO HAMBURGER)
+=> ESTILOS DO MAPA DE LOCALIZAÇÃO
+=> INSCRIÇÃO
+=> PALESTRANTES E TALKS
+=> LOGO
+=> PROGRAMAÇÃO DA CONFERENCIA
+=> CAROUSEL
+===========================*/
+
+/*====================
+	=> RESET CSS
+==========================*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+/* Dude, why do you need this? o_o */
+/* 	font-size: 100%;
+	font: inherit;
+*/
+
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*====================
+	=> ESTILO GLOBAIS
+==========================*/
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: "Rockwell","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+hr.small {
+    max-width: 100px;
+}
+/*====================
+	=> FOOTER
+==========================*/
+footer {
+    padding: 0 0;
+}
+footer hr{
+   border-top: 1px dashed #8c8b8b;
+}
+footer hr:after{
+  content: '\002702';
+  display: inline-block;
+  position: relative;
+  top: -12px;
+  left: 40px;
+  padding: 0 3px;
+  background: #f0f0f0;
+  color: #8c8b8b;
+  font-size: 18px;
+}
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+/*========================
+	=> BANNER PRINCIPAL
+==========================*/
+.banner-principal {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bahia-central-banner-bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.banner-principal-img{
+    margin-top: 15%;
+}
+/*====================
+	=> BOTÕES
+==========================*/
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: #B22222;
+}
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: #8B0000;
+}
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+/*=============================
+	=> CRIAR BLOCO COM FUNDO BRANCO ENTRE SESSÕES
+===============================*/
+.criar-bloco-entre-sessoes {
+    padding: 3% 0;
+}
+/*===============================================
+	=> MENU LATERAL (ACIONADO PELO HAMBURGER)
+================================================*/
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transform: translateX(250px);
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.toggle {
+    margin: 5px 5px 0 0;
+}
+/*===============================================
+	=> ESTILOS DO MAPA DE LOCALIZAÇÃO
+================================================*/
+.mapa {
+    height: 500px;
+}
+@media(max-width:768px) {
+    .mapa {
+        height: 75%;
+    }
+}
+.mapa iframe {
+    pointer-events: none;
+}
+/*====================
+	=> INSCRIÇÃO
+==========================*/
+.quadro-ingressos .item {
+	padding: 20px 0 40px;
+	background-color: 'white';
+	text-align: center;
+}
+.quadro-ingressos .item h3 {
+	margin-top: 0;
+	padding: 12px 10px 10px;
+	font-weight: bold;
+	background: #f1f1f1;
+	text-transform: uppercase;
+	color: #636363;
+	font-size: 20px;
+}
+.quadro-ingressos .item p.preco {
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 60px;
+	border-bottom: 1px solid #e3e3e3;
+}
+.quadro-ingressos .item p.preco span {
+	font-size: 25px;
+	font-weight: normal;
+}
+.quadro-ingressos .item p.preco small {
+	font-size: 22px;
+	font-weight: normal;
+}
+.quadro-ingressos .btn-dark {
+    margin-top: 5%;
+	background-color: '#8ab928'
+}
+/*====================
+	=> PALESTRANTES E TALKS
+==========================*/
+#palestrantes {
+	padding-bottom: 3%;
+    text-align: center;
+}
+#palestrantes .palestrante {
+	margin-bottom: 3%;
+	background: #fff;
+	box-shadow: 0 0 5px 0px #bbb;
+}
+#palestrantes .palestrante .info {
+	padding: 5px 20px 10px;
+}
+#palestrantes .palestrante .info p.nome {
+	color: #222;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+#palestrantes .palestrante .info p.empresa {
+	font-size: 12px;
+	font-style: italic;
+	color: #222;
+}
+#palestrantes .redes-sociais {
+    margin-top: 4%;
+	margin-bottom: 10px;
+}
+#palestrantes .redes-sociais a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid;
+}
+#palestrantes .redes-sociais a:hover {
+	background-color: #8B0000;
+	color: #fff;
+}
+/*====================
+	=> LOGO
+==========================*/
+.logo {
+	height: 125px;
+    border: none;
+    display: inline-flex;
+    transform: scale(.7);
+}
+
+.foto-palestrante{
+    height: 350px;
+    width: 450px;
+}
+/*====================
+	=> PROGRAMAÇÃO DA CONFERENCIA
+==========================*/
+.conf-programacao{
+	position:relative;
+}
+.conf-programacao img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+.conf-programacao:after{
+	display:block;
+	clear:both;
+	content:'';
+}
+.conf-programacao-tabs{
+	position:relative;
+	margin:-97px auto 0;
+	background:#fff;
+}
+.conf-programacao-tabs .nav-tabs{
+	border-bottom:1px solid #e6e6e6;
+	text-align:center;
+	font:20px/30px 'Montserrat', Arial, Helvetica, sans-serif;
+	position:relative;
+	z-index:1;
+}
+.conf-programacao-tabs .nav-tabs > li > a {
+	border-right: 1px solid #e6e6e6;
+	border-radius:0;
+	line-height:30px;
+	margin-right: 0;
+	color:#333;
+	min-width:200px;
+	position:relative;
+	padding:18px 10px 19px;
+	transition:all 0.5s ease 0s;
+	-moz-transition:all 0.5s ease 0s;
+	-webkit-transition:all 0.5s ease 0s;
+	outline:none;
+}
+.conf-programacao-tabs .nav-tabs > li > a span{
+	display:block;
+	font-size:26px;
+}
+.conf-programacao-tabs .nav-tabs > li.active > a,
+.conf-programacao-tabs .nav-tabs > li.active > a:hover,
+.conf-programacao-tabs .nav-tabs > li.active > a:focus{
+	color:#fff;
+    background-color: #B22222;
+}
+.conf-programacao-tabs .nav-tabs > li.active > a:after,
+.conf-programacao-tabs .nav-tabs > li.active > a:hover:after,
+.conf-programacao-tabs .nav-tabs > li.active > a:focus:after{
+	position:absolute;
+	content:'';
+	height:15px;
+	width:15px;
+	transform:rotate(45deg);
+	left:0px;
+	right:0px;
+	margin:auto;
+	bottom:-7px;
+}
+.conf-programacao-tabs .panel.panel-default{
+	border:none;
+	border-radius:0;
+	box-shadow:none;
+	position:relative;
+	padding:60px 0 30px;
+}
+.conf-programacao-tabsletabs .panel.panel-default:before{
+	position:absolute;
+	content:'';
+	border-left:2px dashed #ccc;
+	left:25px;
+	top:0;
+	bottom:0;
+	width:0;
+	height:100%;
+}
+.conf-programacao-tabs .panel-heading{
+	background:none;
+	border:none;
+	position:relative;
+}
+.conf-programacao-tabs .panel-heading:before{
+	content:"\f107";
+	position:absolute;
+	right:20px;
+	top:50%;
+	margin:-10px 0px 0px 0px;
+	font-size:20px;
+	color:#333;
+	font-family:FontAwesome;
+}
+.conf-programacao-tabs .panel-title{
+	font-size:26px;
+	line-height:30px;
+	border-bottom:1px solid #e6e6e6;
+	padding:0 0 10px;
+}
+.conf-programacao-tabs .panel-group .panel-heading + .panel-collapse > .panel-body{
+	border:none;
+	color:#666;
+}
+.conf-programacao-tabs .panel-body p{margin:0 0 20px;}
+.conf-programacao-tabs .announcer{
+	display:block;
+	font:20px/24px 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.conf-programacao-palestra-bloco{
+	float:left;
+	width:100%;
+	position:relative;
+	padding:20px 30px;
+}
+.conf-programacao-palestra-horario{
+	float:left;
+	position:relative;
+}
+.conf-programacao-palestra-horario h5{
+	color:#fff;
+	font-size:18px;
+	font-weight:normal;
+}
+.conf-programacao-palestra-bloco-palestrante{
+	padding-left:110px;
+	position:relative;
+}
+.conf-programacao-palestra-bloco-palestrante:before{
+	content:"";
+	position:absolute;
+	width:20px;
+	height:20px;
+	left:65px;
+	top:0px;
+	border-radius:100%;
+	border:2px solid #d3d3d3;
+}
+.conf-programacao-palestra-bloco-palestrante:after{
+	content:"";
+	position:absolute;
+	width:2px;
+	top:20px;
+	left:74px;
+	bottom:-40px;
+	background-color:#d3d3d3;
+}
+.conf-programacao-palestra-bloco-palestrante-titulo i{
+	margin-left:15px;
+}
+.conf-programacao-palestra-bloco-palestrante-titulo{
+	float:left;
+	position:relative;
+	width:100%;
+	margin:0px 0px 10px;
+	cursor:pointer;
+}
+.conf-programacao-palestra-bloco-palestrante-titulo h5{
+	display:inline-block;
+	color:#fff;
+	font-weight:600;
+	font-size:20px;
+}
+.conf-programacao-palestra-bloco-palestrante-titulo i{
+	font-weight:bold;
+	font-size:16px;
+}
+.conf-programacao-palestra-bloco-palestrante-descricao,
+.conf-programacao-palestra-bloco-palestrante-descricao-esqueleto{
+	width:100%;
+	position:relative;
+}
+.conf-programacao-palestra-bloco-palestrante-descricao p{
+	font-size:16px;
+	color:#d3d3d3;
+	line-height:27px;
+}
+.conf-programacao-palestra-bloco-palestrante-nome{
+	float:none;
+	width:auto;
+	padding:0px 0px 0px 75px;
+	position:relative;
+}
+.conf-programacao-palestra-bloco-palestrante-nome span{
+	font-size:16px;
+	font-style:italic;
+	display:block;
+	font-weight:600;
+    color:#fff;
+}
+/*====================
+	=> CAROUSEL
+==========================*/
+/**
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+*/
+.owl-carousel {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+.owl-carousel * {
+  will-change: transform;
+}
+.owl-carousel:focus {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+.owl-carousel:active {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+.owl-carousel:hover {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+/*item-carousel*/
+.item-carousel {
+  width: 100%;
+  padding-right: 10px;
+}
+.item-carousel-palestrante-foto-pacote {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.item-carousel-palestrante-foto-pacote:hover .item-carousel-foto img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+.item-carousel-palestrante-foto-pacote:hover .item-carousel-palestrante-bio {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+.item-carousel-palestrante-foto-pacote .item-carousel-palestrante-bio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.item-carousel-palestrante-foto-pacote .item-carousel-palestrante-bio-overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+.item-carousel-palestrante-foto-pacote .item-carousel-palestrante-bio-overlay a {
+  color: #ffffff;
+}
+.item-carousel-palestrante-foto-pacote .item-carousel-palestrante-bio-overlay .block-link {
+  min-width: 35px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.item-carousel-palestrante-foto-pacote .item-carousel-palestrante-bio-overlay .block-link:hover {
+  background: #ffffff;
+  color: #029669;
+}
+.item-carousel-palestrante-foto-pacote .item-carousel-palestrante-bio-contexto {
+  position: absolute;
+  width: 100%;
+  text-align: text-justify;
+  padding: 10px;
+}
+.block-link {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.item-carousel-foto {
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.item-carousel-foto img {
+  width: 100%;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  transition: all 1s linear;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+@media (min-width: 768px) {
+  .item-carousel-foto img {
+    margin-bottom: 0;
+  }
+}
+.item-carousel-palestrante-dados span.fa {
+  margin-right: 5px;
+}
+.item-carousel-palestrante-dados p {
+  word-wrap: break-word;
+}
+.item-carousel-nome {
+  margin-top: 0;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.item-carousel-empresa {
+  font-style: italic;
+  font-size: 13px;
+}
+.redes-sociais {
+    margin-top: 4%;
+	margin-bottom: 10px;
+}
+.redes-sociais i {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid;
+    background-color: #fff;
+}
+.redes-sociais i:hover {
+	background-color: #8B0000;
+	color: #fff;
+}
+.redes-sociais a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid;
+}
+.redes-sociais a:hover {
+	background-color: #8B0000;
+	color: #fff;
+}
+.conf-programacao-tabs .nav-tabs{
+	text-align: center;
+}
+.conf-programacao-tabs .nav-tabs>li{
+	float:none;
+	display:inline-block;
+}
+
+/*
+* Quadro de programação - mobile
+*/
+@media (max-width: 767px) {
+	.conf-programacao-palestra-bloco{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.conf-programacao-palestra-bloco-palestrante {
+	    padding-left: 70px;
+	}
+
+	.conf-programacao-palestra-bloco .conf-programacao-palestra-horario h5{
+	    font-size:14px;
+	    line-height:8px;
+	    font-weight: bold;
+	}
+
+	.conf-programacao-palestra-bloco-palestrante:before{
+		width: 10px;
+		height: 10px;
+    	left: 50px;
+	}
+	.conf-programacao-palestra-bloco-palestrante:after{
+		width:2px;
+		top: 9px;
+    	left: 54px;
+	}
+
+	.conf-programacao-palestra-bloco-palestrante-titulo{
+		margin-top:-6px;
+	}
+
+	.conf-programacao-palestra-bloco-palestrante-titulo h5 {
+	    font-size: 18px;
+	}
+
+	.conf-programacao-tabs .nav-tabs>li {
+	    float: none;
+	    display: block;
+	    width: 100%;
+	    border-bottom: 1px solid #ccc;
+	}
+}
+
+
+/******* Padding Helpers *******/
+/*		Padding-All					*/
+.p-0 { padding: 0px; } .p-5 { padding: 5px; } .p-10 { padding: 10px; } .p-15 { padding: 15px; } .p-20 { padding: 20px; } .p-25 { padding: 25px; } .p-30 { padding: 30px; } .p-35 { padding: 35px; }
+/*		padding-left					*/
+.pl-3  { padding-left: 3px; } .pl-5  { padding-left: 5px; } .pl-10 { padding-left: 10px; } .pl-15 { padding-left: 15px; } .pl-20 { padding-left: 20px; } .pl-25 { padding-left: 25px; } .pl-30 { padding-left: 30px; }
+/*		padding-right				*/
+.pr-3  { padding-right: 3px; } .pr-5  { padding-right: 5px; } .pr-10 { padding-right: 10px; } .pr-15 { padding-right: 15px; } .pr-20 { padding-right: 20px; } .pr-25 { padding-right: 25px; } .pr-30 { padding-right: 30px; }
+/*		padding-Horizontal			*/
+.ph-5 	{ padding-left: 5px; padding-right: 5px; } .ph-10 { padding-left: 10px; padding-right: 10px; } .ph-15 { padding-left: 15px; padding-right: 15px; } .ph-20 { padding-left: 20px; padding-right: 20px; } .ph-25 { padding-left: 25px; padding-right: 25px; } .ph-30 { padding-left: 30px; padding-right: 30px }
+/*		padding Vertical				*/
+.pv-5 	{ padding: 5px 0; } .pv-10 { padding: 10px 0; } .pv-15 { padding: 15px 0; } .pv-20 { padding: 20px 0; } .pv-25 { padding: 25px 0px; } .pv-30 { padding:30px 0; }
+/*		padding-top			*/
+.pt-3  { padding-top: 3px; } .pt-5  { padding-top: 5px; } .pt-10 { padding-top: 10px; } .pt-15 { padding-top: 15px; } .pt-20 { padding-top: 20px; } .pt-25 { padding-top: 25px; } .pt-30 { padding-top: 30px; }
+/*		padding-bottom		*/
+.pb-3  { padding-bottom: 3px; } .pb-5  { padding-bottom: 5px; } .pb-10 { padding-bottom: 10px; } .pb-15 { padding-bottom: 15px; } .pb-20 { padding-bottom: 20px; } .pb-25 { padding-bottom: 25px; } .pb-30 { padding-bottom: 30px; }

@@ -1,0 +1,1296 @@
+﻿<html lang="pt-br">
+
+<head>
+  <!-- META TAGS -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Conferência sobre as tecnolgoias em volta do NoSQL" />
+  <meta name="keywords" content="nosql, sql, rdms, sgbdr, banco de dados, database, not only sql, bahia, salvador, mongodb,
+    couchdb, cassandra, neo4j, hipertable, bigtable, mysql, oracle, postgres, web, internet, solution, solução, soluções, 
+    solutions, app, webapp, application, applications, aplicativos, aplicativo, design, programação, programming, 
+    desenvolvimento, development, develop, developer" />
+  <meta name="copyright" content="&copy; Copyleft NoSQL BA" />
+  <title>NoSQLBA - Conferência Baiana de NoSQL</title>
+  <!--Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+  <!--FontAwesome Font Style -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <!-- owl carousel -->
+  <link href="assets/css/owl.carousel.css" rel="stylesheet">
+  <link href="assets/css/owl.theme.css" rel="stylesheet">
+  <!-- Nosso estilo personalizado -->
+  <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<style>
+  a:link {
+      color: #ff0000; 
+      background-color: transparent; 
+      text-decoration: none;
+  }
+  
+  a:visited {
+      color: #ff0000;
+      background-color: transparent;
+      text-decoration: none;
+  }
+  
+  a:hover {
+      color: #ff0000;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+  
+  a:active {
+      color: #ff0000;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+  </style>
+
+<body>
+  <!-- Navegação -->
+  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+      <li class="sidebar-brand">
+        <a href="#top" onclick=$( "#menu-close").click();></a>
+      </li>
+      <li>
+        <a href="#top" onclick=$( "#menu-close").click();>Home</a>
+      </li>
+      <li>
+        <a href="#sobre" onclick=$( "#menu-close").click();>Sobre o evento</a>
+      </li>
+      <li>
+        <a href="#palestrantes" onclick=$( "#menu-close").click();>Palestrantes</a>
+      </li>
+      <li>
+        <a href="#programacao" onclick=$( "#menu-close").click();>Programação</a>
+      </li>
+      <li>
+        <a href="#inscricao" onclick=$( "#menu-close").click();>Inscricao</a>
+      </li>
+      <li>
+        <a href="#localizacao" onclick=$( "#menu-close").click();>Localização</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /Navegação -->
+  <!-- Header / Banner Principal -->
+  <header id="top" class="banner-principal">
+    <div class="container">
+      <div class="row">
+        <img src="assets/img/nosqlba-logo-full.png" class="img-responsive center-block banner-principal-img" alt="Logomarca do evento NoSQL BA">
+      </div>
+    </div>
+  </header>
+  <!-- /Header / Banner Principal -->
+  <!-- Mensagem de Boas Vindas -->
+  <div class="criar-bloco-entre-sessoes">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p class="lead">Bem vindo ao maior evento de NoSQL da Bahia!</p>
+          <p class="lead">Continue lendo essa página para descobrir porque você não pode perder esse evento!</p>
+          <br />
+		  <p class="lead">
+          Programação completa será divulgada até 16/02
+		  </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Mensagem de Boas Vindas -->
+  <!-- Sobre -->
+  <section id="sobre" class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br />
+          <h2 class="text-uppercase">Por que NoSQL?</h2>
+          <hr class="small">
+          <p class="lead text-justify">
+            Os bancos de Dados NOSQL (not only SQL) foram criados, principalmente, para resolver problemas com aplicações web que precisam
+            operar com gigantescas cargas de dados além de poder escalar com grande facilidade. Esses tipos de banco de dados
+            vem sendo usados com muita frequência em redes sociais como Twitter, Facebook, além de persistência em aplicações
+            nas nuvens. Outro ponto importante a citar é a crescente adoção destas novas tecnologias, inclusive em mercados
+            mais conservadores, tais como instituições financeiras e agências governamentais, seus motivos são diversos normalmente
+            para solucionar problemas com flexibilidade, escalabilidade, latência e performance. Para demonstrar, compartilhar
+            essas tecnologias foi criado o evento NOSQL-BA.
+          </p>
+        </div>
+      </div>
+      <hr class="small">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="service-item text-center">
+            <h4>
+              <strong>Mercado</strong>
+            </h4>
+            <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-bar-chart fa-stack-1x text-primary"></i>
+          </span>
+            <p class="text-justify">Os bancos NoSQL está crescendo cada vez mais ao redor do mundo, diversas empresas vem utilizando essa tecnologia.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-item text-center">
+            <h4>
+              <strong>Networking</strong>
+            </h4>
+            <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-users fa-stack-1x text-primary"></i>
+          </span>
+            <p class="text-justify">Compartilhe conhecimento e experiência no assunto, além de conhecer palestrantes com referência internacional.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-item text-center">
+            <h4>
+              <strong>Vagas</strong>
+            </h4>
+            <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rocket fa-stack-1x text-primary"></i>
+          </span>
+            <p class="text-justify">O evento focado em NoSQL visando também a comunicação e a interação, com minicurso e palestras com profissionais
+              com experiência na tecnologia com referência internacional.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-item text-center">
+            <h4>
+              <strong>Participantes</strong>
+            </h4>
+            <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-bullhorn fa-stack-1x text-primary"></i>
+          </span>
+            <p class="text-justify">O evento será focado em desenvolvedores, gestores, entusiastas que tenham interesse em falar de NoSQL.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br />
+  </section>
+  <!-- /Sobre -->
+  <!-- Mensagem de chamada para compra de ingresso -->
+  <div class="criar-bloco-entre-sessoes">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Queremos contar com seu apoio para que possamos trazer uma experiência única para os participantes do NoSQL BA</h2>
+          <br />
+          <a href="mailto:mateus.malaquias1@gmail.com" class="btn btn-lg btn-dark">Seja nosso parceiro!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Mensagem de chamada para compra de ingresso -->
+  <!-- palestrantes -->
+  <section id="palestrantes" class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br />
+          <h2 class="text-uppercase">Palestrantes & Talks</h2>
+          <hr class="small">
+        </div>
+        <div>
+          <div class="container">
+            <div id="id-owl-carousel" class="owl-carousel">
+              <div class="item-carousel">
+                <div>
+                  <div class="item-carousel-palestrante-foto-pacote">
+                    <div class="item-carousel-foto">
+                      <img src="assets/img/palestrantes/leandro_del_busso.jpg" alt="Foto de perfil de Leandro Del Busso Domingues" />
+                    </div>
+                    <div class="item-carousel-palestrante-bio">
+                      <div class="item-carousel-palestrante-bio-overlay">
+                        <div class="item-carousel-palestrante-bio-contexto">
+                          <p class="text-justify">MongoDB Ambassador/Evangelist, membro do MongoDB Advocacy Hub, Top 50 Neo4j Certified. 
+						  Formado em Engenharia da Computação, entusiasta de tecnologias open-source, bigdata e NoSQL. 
+						  Mais de 15 anos de experiência em desenvolvimento de aplicações e manutenção de grandes volumes de dados. 
+						  Atualmente está totalmente focado no desenvolvimento em tecnologias open-source e bancos NoSQL, também tem grande experiência em MS SQL Server. 
+						  Atualmente atua dando consultoria e treinamentos a empresas que estão aderindo o NoSQL.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-carousel-palestrante-dados">
+                    <h3 class="item-carousel-nome">Leandro Del Busso Domingues</h3>
+                    <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                    <div class="redes-sociais">
+                      <a href="https://twitter.com/delbussoweb" target="_blank"><i class="fa fa-twitter"></i></a>
+                      <a href="https://www.linkedin.com/in/leandro-domingues/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+			  
+			   <div class="item-carousel">
+                <div>
+                  <div class="item-carousel-palestrante-foto-pacote">
+                    <div class="item-carousel-foto">
+                      <img src="assets/img/palestrantes/dani_monteiro.jpg" alt="Foto de perfil de Danielle Monteiro" />
+                    </div>
+                    <div class="item-carousel-palestrante-bio">
+                      <div class="item-carousel-palestrante-bio-overlay">
+                        <div class="item-carousel-palestrante-bio-contexto">
+                          <p class="text-justify">Sou mestre em Engenharia da Computação (IPT-USP), pós graduada em Engenharia de Negócios (Centro Paula Souza) e graduada em Processamento de dados (FATEC-SP). 
+						  Trabalho com TI há mais de 15 anos, inicialmente como desenvolvedora, depois como DBA e atualmente como Arquiteta de Dados.
+						  Sou autora do blog DB4BEGINNERS.com, colaboradora de diversos blogs e comunidades, e mantenho a página DB4BEGINNERS no Facebook (www.facebook.com/DB4BEGINNERS)
+						  Meu objetivo é ajudar desenvolvedores iniciantes a modelar e consultar bancos de dados relacionais e NoSQL para que eles possam criar ótimas aplicações, trabalhar em excelentes empresas com ótimos salários.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-carousel-palestrante-dados">
+                    <h3 class="item-carousel-nome">Danielle Monteiro</h3>
+                    <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                    <div class="redes-sociais">
+                      <a href="https://twitter.com/DaniMonteiroDBA" target="_blank"><i class="fa fa-twitter"></i></a>
+                      <a href="https://www.linkedin.com/in/danimonteirodba/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+			  
+			  <div class="item-carousel">
+                <div>
+                  <div class="item-carousel-palestrante-foto-pacote">
+                    <div class="item-carousel-foto">
+                      <img src="assets/img/palestrantes/elder_moraes.jpg" alt="Foto de perfil de Elder Moraes" />
+                    </div>
+                    <div class="item-carousel-palestrante-bio">
+                      <div class="item-carousel-palestrante-bio-overlay">
+                        <div class="item-carousel-palestrante-bio-contexto">
+                          <p class="text-justify">Elder Moraes ajuda desenvolvedores server side a construir e entregar aplicações seguras, rápidas e disponíveis, para que assim possam trabalhar nos melhores projetos do mercado. 
+						  Apaixonado por Java EE, cloud e arquitetura de sistemas, ele compartilha suas experiências através de conteúdo online e eventos internacionais como JavaOne, The Developers Conference, Oracle Code e Campus Party.
+						  Desenvolvedor desde 1999, já atuou nos mais diversos mercados e projetos, desde logística até finanças, passando por sistemas jurídicos e de recursos humanos.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-carousel-palestrante-dados">
+                    <h3 class="item-carousel-nome">Elder Moraes</h3>
+                    <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                    <div class="redes-sociais">
+                      <a href="https://www.linkedin.com/in/eldermoraes" target="_blank"><i class="fa fa-linkedin"></i></a>
+                      <a href="https://twitter.com/elderjava" target="_blank"><i class="fa fa-twitter"></i></a>
+					            <a href="https://github.com/eldermoraes" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="item-carousel">
+                <div>
+                  <div class="item-carousel-palestrante-foto-pacote">
+                    <div class="item-carousel-foto">
+                      <img src="assets/img/palestrantes/igor_paula.jpg" alt="Foto de perfil de Igor de Paula" />
+                    </div>
+                    <div class="item-carousel-palestrante-bio">
+                      <div class="item-carousel-palestrante-bio-overlay">
+                        <div class="item-carousel-palestrante-bio-contexto">
+                          <p class="text-justify">Responsável pelos bancos de dados da Braspag, maior gateway de e-commerce da América Latina, empresa do grupo Cielo. 
+                            Certificado Microsoft, palestrante em eventos como SQL Saturday e InteropMix, e instrutor de treinamentos.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-carousel-palestrante-dados">
+                    <h3 class="item-carousel-nome">Igor de Paula</h3>
+                    <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                    <div class="redes-sociais">
+                      <a href="https://www.linkedin.com/in/igor-santos-de-paula-098bab35/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="item-carousel">
+                  <div>
+                    <div class="item-carousel-palestrante-foto-pacote">
+                      <div class="item-carousel-foto">
+                        <img src="assets/img/palestrantes/bruno_potelo.jpg" alt="Foto de perfil de Bruno Cabral" />
+                      </div>
+                      <div class="item-carousel-palestrante-bio">
+                        <div class="item-carousel-palestrante-bio-overlay">
+                          <div class="item-carousel-palestrante-bio-contexto">
+                            <p class="text-justify">CEO da Potelo, startup responsável pelo Escavador. 
+                              É mestre em Ciência da Computação pela UFBA, com graduação sanduíche pela UFBA/University of Washington, com pós em Machine Learning, 
+                              e programador open source no tempo livre em projetos como o DreaMule e GNUNet. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-carousel-palestrante-dados">
+                      <h3 class="item-carousel-nome">Bruno Cabral</h3>
+                      <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                      <div class="redes-sociais">
+                        <a href="https://www.linkedin.com/in/bruno-cabral-36370832/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/bratao" target="_blank"><i class="fa fa-github"></i></a>
+                      </div>
+                    </div>
+                  </div>              
+                </div>
+
+                 
+			  <div class="item-carousel">
+          <div>
+            <div class="item-carousel-palestrante-foto-pacote">
+              <div class="item-carousel-foto">
+                <img src="assets/img/palestrantes/pedro_correa.jpg" alt="Foto de perfil de Pedro Correa" />
+              </div>
+              <div class="item-carousel-palestrante-bio">
+                <div class="item-carousel-palestrante-bio-overlay">
+                  <div class="item-carousel-palestrante-bio-contexto">
+                    <p class="text-justify">Formado em Engenharia Elétrica, atua como Cientista de Dados há pouco mais de um ano. Apaixonado por entender melhor a realidade e 
+                      resolver problemas com o uso de dados e de ferramentas open-source, acredita firmemente no poder de comunidade 
+                      e de troca de conhecimento para o crescimento de todos, pessoal e profissionalmente. 
+                      Atualmente, utiliza Python, MongoDB e MS SQL como principais meios de análise de dados.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-carousel-palestrante-dados">
+              <h3 class="item-carousel-nome">Pedro Correa</h3>
+              <!-- <p class="item-carousel-empresa">Amazon</p> -->
+              <div class="redes-sociais">
+                <a href="https://www.linkedin.com/in/pfcor/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://twitter.com/pfcorreia" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/pfcor" target="_blank"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>              
+        </div>
+
+        <div class="item-carousel">
+            <div>
+              <div class="item-carousel-palestrante-foto-pacote">
+                <div class="item-carousel-foto">
+                  <img src="assets/img/palestrantes/michel_conrado.jpg" alt="Foto de perfil de Michel Conrado" />
+                </div>
+                <div class="item-carousel-palestrante-bio">
+                  <div class="item-carousel-palestrante-bio-overlay">
+                    <div class="item-carousel-palestrante-bio-contexto">
+                      <p class="text-justify">Desenvolvedor JavaScript (one lang to rule them all), DevOps, Docker For life.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-carousel-palestrante-dados">
+                <h3 class="item-carousel-nome">Michel Conrado</h3>
+                <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                <div class="redes-sociais">
+                  <a href="https://www.linkedin.com/in/micheldiz/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a href="https://twitter.com/MichelDizAeh" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://github.com/MichelDiz" target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>              
+          </div>
+
+          <div class="item-carousel">
+              <div>
+                <div class="item-carousel-palestrante-foto-pacote">
+                  <div class="item-carousel-foto">
+                    <img src="assets/img/palestrantes/diogenes_pires.jpg" alt="Foto de perfil de Diogenes Pires" />
+                  </div>
+                  <div class="item-carousel-palestrante-bio">
+                    <div class="item-carousel-palestrante-bio-overlay">
+                      <div class="item-carousel-palestrante-bio-contexto">
+                        <p class="text-justify">Mestrado em Ciência da Computação, UFBA, em curso, pós-graduado especialista em Banco de dados com ênfase em alta disponibilidade pela UNIFACS 
+                          em 2012, pós-graduado especialista em Governança de TI pelo SENAC em 2011. 
+                          Curso de Metodologia do Ensino Superior pela UNIFACS. Bacharel em Sistemas de Informação pela Faculdade Hélio Rocha em 2010. 
+                          Nível médio técnico em processamento de dados, formado pela Escola de Engenharia Eletro-Mecânica da Bahia em 1999. 
+                          Atuação em Desenvolvimento de sistemas desde 1996, Análise de sistemas desde 2005 e Análise de Requisitos desde 2010, 
+                          Analista de Business Intelligence desde 2013. 
+                          Atualmente, consultor BI/DW/Big Data.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-carousel-palestrante-dados">
+                  <h3 class="item-carousel-nome">Diógenes Pires</h3>
+                  <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                  <div class="redes-sociais">
+                    <a href="https://www.linkedin.com/in/di%C3%B3genes-pires-b375a172/" target="_blank"><i class="fa fa-linkedin"></i></a>                  
+                  </div>
+                </div>
+              </div>              
+            </div>
+
+            <div class="item-carousel">
+                <div>
+                  <div class="item-carousel-palestrante-foto-pacote">
+                    <div class="item-carousel-foto">
+                      <img src="assets/img/palestrantes/michel_felipe.jpg" alt="Foto de perfil de Michel Felipe" />
+                    </div>
+                    <div class="item-carousel-palestrante-bio">
+                      <div class="item-carousel-palestrante-bio-overlay">
+                        <div class="item-carousel-palestrante-bio-contexto">
+                          <p class="text-justify">Especialista em Game Designer pela UNEB, apaixonado por desenvolvimento de jogos digitais e tudo que perpassa este mundo fascinante. 
+                            Atualmente, é Analista de Sistemas no Serpro, atuando em projetos mobile (nativos e híbridos).
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-carousel-palestrante-dados">
+                    <h3 class="item-carousel-nome">Michel Felipe de Oliveira Ferreira</h3>
+                    <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                    <div class="redes-sociais">
+                      <a href="https://www.linkedin.com/in/mfdeveloper/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                      <a href="https://twitter.com/mfdeveloper" target="_blank"><i class="fa fa-twitter"></i></a>
+                      <a href="https://github.com/mfdeveloper" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+			  
+			   <div class="item-carousel">
+                <div>
+                  <div class="item-carousel-palestrante-foto-pacote">
+                    <div class="item-carousel-foto">
+                      <img src="assets/img/palestrantes/cmilfont.jpg" alt="Foto de perfil de Christiano Milfont" />
+                    </div>
+                    <div class="item-carousel-palestrante-bio">
+                      <div class="item-carousel-palestrante-bio-overlay">
+                        <div class="item-carousel-palestrante-bio-contexto">
+                          <p class="text-justify">Christiano Milfont é Product Manager na Rivendel com 20 anos de experiência em desenvolvimento de software, construção e evolução de produtos e 
+						  principalmente se especializando na gestão e execução de transformações digitais.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-carousel-palestrante-dados">
+                    <h3 class="item-carousel-nome">Christiano Milfont</h3>
+                    <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                    <div class="redes-sociais">
+                      <a href="https://www.linkedin.com/in/cmilfont/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                      <a href="https://twitter.com/cmilfont" target="_blank"><i class="fa fa-twitter"></i></a>
+                      <a href="https://github.com/cmilfont" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="item-carousel">
+                <div>
+                  <div class="item-carousel-palestrante-foto-pacote">
+                    <div class="item-carousel-foto">
+                      <img src="assets/img/palestrantes/ivan_queiroz.jpg" alt="Foto de perfil de Ivan Queiroz" />
+                    </div>
+                    <div class="item-carousel-palestrante-bio">
+                      <div class="item-carousel-palestrante-bio-overlay">
+                        <div class="item-carousel-palestrante-bio-contexto">
+                          <p class="text-justify">Bacharel em Sistemas de Informação pela Estácio de Sá / FIB Analista de Sistemas a nove anos. Atualmente
+                            na Indra Brasil na área de clientes de Telecom. Principal cliente atual é a Vivo, em sistemas
+                            ligados as áreas de atendimento ao cliente (CRM), vendas e jurídica. Experiência em Java, C++
+                            e PHP; desenvolvendo sistemas desktop, web e middleware.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-carousel-palestrante-dados">
+                    <h3 class="item-carousel-nome">Ivan Queiroz</h3>
+                    <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                    <div class="redes-sociais">
+                      <a href="https://twitter.com/ivanqueiroz" target="_blank"><i class="fa fa-twitter"></i></a>
+                      <a href="https://www.linkedin.com/in/ivanqueiroz/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                      <a href="https://github.com/ivanqueiroz" target="_blank"><i class="fa fa-github"></i></a>
+                      <a href="https://blog.ivanqueiroz.com" target="_blank"><i class="fa fa-laptop"></i></a>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+			  
+			  <div class="item-carousel">
+                  <div>
+                  <div class="item-carousel-palestrante-foto-pacote">
+                    <div class="item-carousel-foto">
+                      <img src="assets/img/palestrantes/felipe_bastos.jpg" alt="Foto de perfil de Felipe Augusto Bastos Moraes" />
+                    </div>
+                    <div class="item-carousel-palestrante-bio">
+                      <div class="item-carousel-palestrante-bio-overlay">
+                        <div class="item-carousel-palestrante-bio-contexto">
+                          <p class="text-justify">Analista Desenvolvedor há mais de 10 anos, Especializado em Gerenciamento de Projetos (PMI), é entusiasta dos Método Ágeis, 
+						  Inteligência Artificial e Microserviços. 
+						  Hoje, aproveita a vida de pai de Autista para realizar todos os seus sonhos e aspirações, por que a vida é muito curta para ser igual a todo mundo.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-carousel-palestrante-dados">
+                    <h3 class="item-carousel-nome">Felipe Augusto Bastos Moraes</h3>
+                    <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                    <div class="redes-sociais">
+                      <a href="https://www.linkedin.com/in/felipebastosweb" target="_blank"><i class="fa fa-linkedin"></i></a>
+                      <a href="https://twitter.com/felipebastosweb" target="_blank"><i class="fa fa-twitter"></i></a>
+                      <a href="https://github.com/felipebastosweb" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="item-carousel">
+                <div>
+                  <div class="item-carousel-palestrante-foto-pacote">
+                    <div class="item-carousel-foto">
+                      <img src="assets/img/palestrantes/otavio_santana.jpg" alt="Foto de perfil de Otávio Santana" />
+                    </div>
+                    <div class="item-carousel-palestrante-bio">
+                      <div class="item-carousel-palestrante-bio-overlay">
+                        <div class="item-carousel-palestrante-bio-contexto">
+                          <p class="text-justify">Otávio Santana é um desenvolvedor e entusiasta de código aberto. Ele é um evangelista e praticante de filosofia ágil e desenvolvimento poliglota no Brasil.
+                              Santana é líder dos JUGs  JavaBahia e SouJava e é um forte defensor das comunidades Java no Brasil, onde também lidera a iniciativa BrasilJUGs 
+                              para incorporar JUGs brasileiros em atividades conjuntas.
+                              Ele é cocriador e também responsável pelo Grupo Linguagil, fusão de grupos Java, Ruby, Python e Agile que promove a agilidade em comunidades de desenvolvimento.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-carousel-palestrante-dados">
+                    <h3 class="item-carousel-nome">Otávio Santana</h3>
+                    <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                    <div class="redes-sociais">
+                      <a href="https://twitter.com/otaviojava" target="_blank"><i class="fa fa-twitter"></i></a>
+                      <a href="https://www.linkedin.com/in/otaviojava/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                      <a href="https://github.com/otaviojava" target="_blank"><i class="fa fa-github"></i></a>
+                      <a href="https://otaviojava.wordpress.com/" target="_blank"><i class="fa fa-laptop"></i></a>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="item-carousel">
+                  <div>
+                    <div class="item-carousel-palestrante-foto-pacote">
+                      <div class="item-carousel-foto">
+                        <img src="assets/img/palestrantes/luiz_claudio.jpg" alt="Foto de perfil de Luiz Claudio (LC)" />
+                      </div>
+                      <div class="item-carousel-palestrante-bio">
+                        <div class="item-carousel-palestrante-bio-overlay">
+                          <div class="item-carousel-palestrante-bio-contexto">
+                            <p class="text-justify">Formado em Processamento de Dados pela Faculdade Rui Barbosa, especialista em Redes de Computadores pela Unifacs. 
+                              Trabalha com desenvolvimento e administração de sistemas desde 1996, tendo usado diferentes linguagens e metodologias. 
+                              Tem participado de diversos eventos como organizador, instrutor e palestrante. É membro dos grupos Python Bahia e NoSQL-BA.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-carousel-palestrante-dados">
+                      <h3 class="item-carousel-nome">Luiz Claudio (LC)</h3>
+                      <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                      <div class="redes-sociais">
+                        <a href="https://twitter.com/luizclaudios" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/luiz-cláudio-silva-b3b9a817/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/luizclaudio" target="_blank"><i class="fa fa-github"></i></a>
+                      </div>
+                    </div>
+                  </div>              
+                </div>
+			  
+            </div>
+          </div>
+        </div>
+        <br />
+  </section>
+  <!-- /palestrantes -->
+  <!-- SOMENTE ESPAÇO EM BRANCO -->
+  <div class="criar-bloco-entre-sessoes">
+    <div class="container">
+      <div class="row"> </div>
+    </div>
+  </div>
+  <!-- /SOMENTE ESPAÇO EM BRANCO -->
+  <!-- Programação -->
+  <section id="programacao" class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br />
+          <h2 class="text-uppercase"></h2>
+          <hr class="small">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="conf-programacao">
+            <div class="conf-programacao-tabs">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="apresentacoes" class="active">
+                  <a href="#quinta" role="tab" data-toggle="tab">
+                    <span class="text-uppercase">quinta</span>08.03.2018</a>
+                </li>
+                <li role="apresentacoes">
+                  <a href="#sexta" role="tab" data-toggle="tab">
+                    <span class="text-uppercase">sexta</span>09.03.2018</a>
+                </li>
+                <li role="apresentacoes">
+                  <a href="#sabado" role="tab" data-toggle="tab">
+                    <span class="text-uppercase">sabado</span>10.03.2018</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="quinta">
+					<div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>09:30</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>ArangoDB - Python com Dados MultiModelos</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+						Apresentar o esquema Multi Modelo do ArangoDB (chave-valor, documentos e grafos) através de sua interface web, e demonstrar como criar um Microserviço em Python 
+						que explore todos os modelos de Dados do ArangoDB, como principal Banco de Dados. 
+              </p>
+              <p class="text-justify" style="color:red;">
+                  Área de download:
+                (<a href="https://speakerdeck.com/felipebastosweb/nosqlba-2018-arangodb-com-python" target="_blank">Slides</a> | <a href="
+                          https://www.dropbox.com/sh/6j8haujms7pgz2w/AABRm6StOqLamL3bGw5mTQAba?dl=0" target="_blank">Arquivos</a>)
+                  </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Felipe Augusto Bastos Moraes</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+				  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>09:30</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Estabilidade e escalabilidade na nuvem com Java EE, NoSQL e Docker</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">Em um mundo onde a quantidade de dados a serem manipulados pelas aplicações parece não parar mais de crescer, fica uma pergunta: como planejar, construir e manter aplicações seguras e confiáveis, prontas para mudanças de comportamentos repentinas e que utilizem os recursos disponíveis da melhor forma possível?
+
+Bom, com certeza não há uma resposta simples! Mas há sim ferramentas poderosas que lhe ajudarão a atingir esses resultados. Hoje mesmo!
+
+Nesse mini curso, aprenderemos sobre como é possível unir Java EE e NoSQL através do projeto JNoSQL, suportados pela estrutura de containers do Docker e com a estabilidade e escalabilidade do Container Service do Oracle Cloud. 
+
+Com ferramentas como essas, você não apenas criará aplicações inigualáveis, mas também se destacará como um profissional diferenciado em um mercado mega concorrido. Nada mal, não?
+							
+              </p>
+              <p class="text-justify" style="color:red;">
+                  Área de download:
+                  (<a href="https://drive.google.com/file/d/1qeG0jC9bXuajw_8LLX1XcIaqAbzfaPgc/view?usp=drivesdk" target="_blank">Material</a>)
+                    </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Elder Moraes</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+					<div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>14:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Implementando MongoDB - Instalação, Replicaset e Sharding</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">Demonstrar a instalação, passando por boas-práticas em ambientes produtivos.
+Implementar um cluster utilizando o recurso de Replicaset com a demonstração de failover e etc.
+Implementar um cluster utilizando Sharding, demonstrar a criação de particionamento de dados utilizando shard-key, chunks, etc</p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Leandro Del Busso Domingues</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+				  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>14:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Usando NoSQL com Python</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+                              Nesta oficina serão apresentados os conceitos básicos de bancos NoSQL e suas aplicações, e as estruturas
+                              de dados da linguagem de programação Python que melhor se adequam aos conceitos não relacionais.
+                              Então, para praticar, serão propostos exercícios com uso de bancos NoSQL.
+						  </p>
+						   <p class="text-justify" style="color:red;">
+                              Área de download:
+                              (<a href="https://github.com/luizclaudio/nosqlba-2018" target="_blank">Código</a> | <a href="http://bit.ly/2FH4NQo" target="_blank">Slides</a>)
+                                </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Luiz Claudio Silva (LC)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="sexta">
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>09:30</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>
+                          Abertura
+                        </h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p>
+                            <!-- joga o descricao aqui -->
+                          </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right"><!-- joga o palestrante aqui --></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>10:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Neo4J - Banco Orientado a Grafos</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+                           Principal banco de grafos do mercado, foi criado em 2003 pela Neo Technology possui código aberto escrito sobre a JVM (com Scala e Java). 
+                           O Neo4j é escalável, é ACID,possui suporte a alta disponibilidade (na versão enterprise), pode ser utilizado embarcado ou como servidor, 
+                           fornece uma API REST para operações e possui uma linguagem própria de consulta chamada Cypher.
+                          </p>
+                          <p class="text-justify" style="color:red;">
+                              Área de download:
+                              (<a href="https://speakerdeck.com/ivanqueiroz/neo4j-banco-orientado-a-grafos" target="_blank">Material</a>)
+                                </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Ivan Queiroz</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>11:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Novos recursos do MongoDB 3.6</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+						Demonstração dos novos recursos da versão 3.6 do MongoDB. Change Streams, Melhorias na Query Language, 
+            Consistência e Disponibilidade "tunáveis" e Aggregation Framework
+                          </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Leandro Domingues</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>14:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>
+                          Ciência de Dados com MongoDB e Python
+                        </h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+                            <!-- joga o descricao aqui -->
+                           Por meio do uso de seu Aggregation Framework, o MongoDB pode ser uma poderosa ferramenta para análise de dados. Vamos utilizar o Pymongo para acessar o banco e criar pipelines de transformação dentro de um Jupyter Notebook, onde podemos na sequência gerar visualizações exploratórias.
+                          </p>
+                          <p class="text-justify" style="color:red;">
+                            Área de download:
+                          (<a href="https://github.com/pfcor/nosqlba_python-mongo" target="_blank">Slides</a>)
+                            </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Pedro Correa</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>15:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Técnicas avançadas utilizadas por redes sociais que vão turbinar o seu projeto hoje</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+                            Sejamos honestos: a coleta de dados atualmente cresce a um ritmo assustador. Obter resultados a partir de volumes de dados tão grandes é um desafio cada vez maior. Não há dúvidas que há um tipo de aplicação que faz isso com maestria: redes sociais. Muitas delas possuem bilhões de usuários gerando e consumindo dados a uma velocidade incrível. Daí vem a pergunta: é possível fazer isso com a sua aplicação? Nessa palestra você aprenderá técnicas avançadas utilizadas por algumas das maiores empresas do mundo para armanezar, analisar e obter resultados de massas de dados imensas. Não importa o tamanho do seu projeto, você pode levá-lo a outro nível e deixá-lo pronto para a próxima onda! Hoje!						
+                          </p>
+                          <p class="text-justify" style="color:red;">
+                              Área de download:
+                              (<a href="https://drive.google.com/file/d/1FtfW7tLpBDdu9WbT2zYyWPupWSAAq1Wh/view?usp=drivesdk" target="_blank">Material</a>)
+                                </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Elder Moraes</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>16:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Azure CosmosDB: O serviço de banco de dados NOSQL globalmente distribuído e multimodelo da Microsoft</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+                            A sessão tem como objetivo apresentar o CosmosDB, 
+                            solução NoSQL em nuvem de banco de dados distribuido e 
+                            multimodelo da Microsoft que foi lançada em 2017 no Azure.						
+                          </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Igor de Paula</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>17:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Sistemas Inteligentes com o Vespa</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+                            O Yahoo liberou esse ano o Vespa Engine, um banco de dados moderno que permite a computação e 
+                            recuperação de dados em um volume e velocidades surreais. 
+                            Vamos mostrar como utilizamos no Escavador.com para buscar documentos de forma inteligente.						
+                          </p>
+                          <p class="text-justify" style="color:red;">
+                              Área de download:
+                              (<a href="slides/Vespa_v3.pptx" target="_blank">Material</a>)
+                                </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Bruno Souza Cabral</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>18:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Encerramento</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p></p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="sabado">
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>09:30</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>
+                          Abertura
+                        </h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p>
+                            <!-- joga o descricao aqui -->
+                          </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right"><!-- joga o palestrante aqui --></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>10:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Introdução ao Dgraph</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+						Dgraph, um "novo" banco de dados noSQL Grafo. Ele é desenvolvido em Go Lang. 
+						É projetado para se destacar nas fraquezas dos bancos de dados relacionais tradicionais: atravessar relacionamentos e executar eficientemente associações complexas em escala. 
+						Com $ 3 milhões USD em investimento de Seed. Um sistema que reúne o melhor de NoSQL e Spanner (NewSQL). Com breve suporte a GraphQL, Open Cypher e Gremlin.
+                          </p>
+                          <p class="text-justify" style="color:red;">
+                              Área de download:
+                              (<a href="https://view.genial.ly/5a7ba0b29ed97757fbf726df/dgraph" target="_blank">Material</a>)
+                                </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Michel Conrado</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>11:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Escalando suas consultas com Elasticsearch</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+						Case utilizando o Elasticsearch além do seu Mindset de busca como um verdadeiro NoSql servindo uma camada de backend aliado com GraphQL para otimizar aplicações de vendas de experiência em viagens na CVC.
+Sistemas legados que precisam evoluir sem Budget ou tempo adequado podem se beneficiar de otimizações da DSL que o ES já propõe em cima de sua arquitetura.
+                          </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Cristiano Milfont</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>14:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>
+							Modelagem de Dados para BD NoSQL
+                        </h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+                            Abordagem da modelagem de banco de dados em bancos não relacionais (NoSQL).
+                          </p>
+                          <p class="text-justify" style="color:red;">
+                              Área de download:
+                              (<a href="http://db4beginners.com/download/nosqlba-modelagem-para-bancos-de-dados-nosql/" target="_blank">Material</a>)
+                                </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Danielle Monteiro</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>15:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Armazenando dados de jogos isométricos em grafos</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+                            Estudo de caso de uma biblioteca para jogos digitais isométricos, que está em fase de desenvolvimento. O objetivo é demonstrar como a estrutura de armazenamento e coleta de dados é exposta por uma API de recursos/construções/inventário, e como esta foi pensada utilizando bancos NOSQL baseados em grafos como: Neo4J ou OrientDB.						
+                          </p>
+                          <p class="text-justify" style="color:red;">
+                              Área de download:
+                              (<a href="https://www.slideshare.net/mfdeveloper/api-para-jogos-isomtricos/mfdeveloper/api-para-jogos-isomtricos" target="_blank">Material</a>)
+                                </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Michel Felipe de Oliveira Ferreira</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>16:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Big Data com Ecossistema Hadoop: Hands-on (HBase, MySql e Hive + Power BI)</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+                            Nesta palestra falaremos sobre o Big Data na visão do ecossistema Hadoop, onde abordaremos conceitos do sistema de arquivos distribuídos e altamente escaláveis, processamento massivo de dados e os diferentes tipos de bancos de dados NoSQL. Venha ver um arquivo de log, um banco de dados relacional e uma tabela do NoSQL se transformarem em painéis no Power BI.						
+                          </p>
+                          <p class="text-justify" style="color:red;">
+                              Área de download:
+                              (<a href="http://www.bilivre.com.br/uncategorized/palestra-big-data-com-ecossistema-hadoop-hbase-mysql-e-hive-power-bi/" target="_blank">Material</a>)
+                                </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Diógenes Santos</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>17:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Cassandra o que não te contaram</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p class="text-justify">
+                              O Apache Cassandra é um banco de dados família de colunas mais famosos de todos os tempos, dentre suas características estão a sua elasticidade além de fortes recursos de disponibilidade. 
+                              Porém, lamento te informar que não te contaram tudo sobre esse banco: Modelagem, impacto na arquitetura, tamanho de heap, 
+                              configuração de chaves e índices além do mais novo concorrente o scylladb. Conheça isso e muito mais nessa palestra.
+                          </p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right">Otávio Santana</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conf-programacao-palestra-bloco">
+                    <div class="conf-programacao-palestra-horario">
+                      <h5>18:00</h5>
+                    </div>
+                    <div class="conf-programacao-palestra-bloco-palestrante">
+                      <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                        <h5>Encerramento</h5>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                      <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                        <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                          <p></p>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                          <span class="text-right"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>              
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <br />
+  </section>
+  <!-- /Programação -->
+  <!-- Mensagem de chamada para compra de ingresso -->
+  <div class="criar-bloco-entre-sessoes">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br />
+          <h2 class="text-uppercase">Patrocinador Platinum</h2>
+          <hr class="small">
+        </div>
+      </div>
+      <div class="row text-center">
+        <img src="assets/img/patrocinadores/oracle-logo.png" class="img-thumbnail logo" alt="Oracle logomarca">
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br />
+          <h2 class="text-uppercase">Patrocinadores</h2>
+          <hr class="small">
+        </div>
+      </div>
+      <div class="row text-center">
+        
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <br />
+          <h2 class="text-uppercase">Apoiadores</h2>
+          <hr class="small">
+        </div>
+      </div>
+      <div class="row text-center">
+        <img src="assets/img/apoiadores/logo-ucsal.png" class="img-thumbnail logo" alt="UCSAL (Universidade Católica do Salvador)">        
+        <img src="assets/img/apoiadores/cluster-logo.jpeg" class="img-thumbnail logo" alt="Cluster">
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <br />
+          <h2 class="text-uppercase">Organização</h2>
+          <hr class="small">
+        </div>
+      </div>
+      <div class="row text-center">
+		<img src="assets/img/apoiadores/python_ba.png" class="img-thumbnail logo" alt="Python BA">
+        <img src="assets/img/apoiadores/javabahia-logo.png" class="img-thumbnail logo" alt="Java Bahia">
+        <img src="assets/img/apoiadores/logo_infoucsal.jpg" class="img-thumbnail logo" alt="Info Ucsal">
+      </div>
+    </div>
+  </div>
+  <!-- /Mensagem de chamada para compra de ingresso -->
+  <!-- Inscrição -->
+  <section id="inscricao" class="bg-primary">
+    <div class='container'>
+      <div class="row">
+        <h2 class="text-center text-uppercase pt-30">Inscrição</h2>
+        <hr class="small">
+      </div>
+      <div class='row'>
+        <div class="quadro-ingressos">
+          <div class="col-sm-4 col-md-4">
+            <div class="item">
+              <h3>Mini-curso (quinta)</h3>
+              <p class="preco"><span>R$</span>60,00</p>
+              <a target="_blank" class="btn btn-lg btn-dark" href="http://inscricao.nosqlba.org/">Inscreva-se</a>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <div class="item">
+              <h3>Palestras (sexta)</h3>
+              <p class="preco"><span>R$</span>70,00</p>
+              <a target="_blank" class="btn btn-lg btn-dark" href="http://inscricao.nosqlba.org/">Inscreva-se</a>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <div class="item">
+              <h3>Palestras (sabado)</h3>
+              <p class="preco"><span>R$</span>70,00</p>
+              <a target="_blank" class="btn btn-lg btn-dark" href="http://inscricao.nosqlba.org/">Inscreva-se</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+  <!-- /Ingressos -->
+  <!-- Mapa com localização -->
+  <section id="localizacao" class="mapa">
+    <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3985020538394!2d-38.41597278517842!3d-12.94633289087241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e9ec1bfe72412b2!2sCatholic+University+of+Salvador+-+UCSAL!5e0!3m2!1sen!2sbr!4v1514479069129" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <br />
+    <small>
+	<a href="https://goo.gl/maps/ZT2VuHJPEvr" target="_blank">Detalhar localização</a>
+   </small>
+  </section>
+  <!-- /Mapa com localização -->
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <hr>
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+          <p class="text-muted">Feito com
+            <span style="color: red" class=" fa fa-heart"></span> por
+            <a href="https://twitter.com/mmalaquias1" target="_blank">Mateus Malaquias</a></p>
+          <br />
+        </div>
+      </div>
+    </div>
+    <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+  </footer>
+  <!-- /Footer -->
+  <!-- jQuery -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- Bootstrap Core -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Owl Caroulsel -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- Nosso arquivo JS personalizado -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
