@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `
 
 const Hero = ({ children, offset }) => (
-  <>
+  <Fragment>
     <Divider speed={0.2} offset={offset}>
       <UpDown>
         <SVG icon="triangle" hiddenMobile width={48} stroke={colors.orange} left="10%" top="20%" />
@@ -44,7 +44,7 @@ const Hero = ({ children, offset }) => (
     <Content speed={0.4} offset={offset}>
       <Wrapper>{children}</Wrapper>
     </Content>
-  </>
+  </Fragment>
 )
 
 export default Hero
