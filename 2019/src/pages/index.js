@@ -58,7 +58,7 @@ const Footer = styled.footer`
 const Index = () => (
   <Fragment>
     <Layout />
-    <Parallax pages={5}>
+    <Parallax pages={7}>
       <Hero offset={0}>
         <BigTitle>
           no<span style={{ color: '#EC0B0E', fontWeight: 700 }}>sql</span>:<span style={{ color: '#0079CB' }}>ba</span></BigTitle>
@@ -124,19 +124,17 @@ const Index = () => (
           </AboutSub>
         </AboutHero>
       </About>
-      <Contact offset={4}>
+      <Projects offset={4}>
+        <Title>Patrocinadores</Title>
+        <Subtitle>Seja um patrocinador deste grande evento!</Subtitle>
+      </Projects>
+      <Contact offset={6}>
         <Inner>
-          <Title>Get in touch</Title>
-          <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
-          </ContactText>
+          <Title>Localização</Title>
+          <Subtitle>Em breve!</Subtitle>
         </Inner>
         <Footer>
-          &copy; 2019 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>. Made by{' '}
-          <a href="https://www.lekoarts.de">LekoArts</a>.
+          &copy; 2019 NoSQL:BA
         </Footer>
       </Contact>
     </Parallax>
