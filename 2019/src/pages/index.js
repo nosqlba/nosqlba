@@ -63,9 +63,8 @@ const Index = () => (
     <Parallax pages={5}>
       <Hero offset={0}>
         <BigTitle>
-          Hello, <br /> I'm John Doe.
-        </BigTitle>
-        <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
+          no<span style={{ color: '#EC0B0E', fontWeight: 700 }}>sql</span>:<span style={{ color: '#0079CB' }}>ba</span></BigTitle>
+        <Subtitle>Conferência baiana sobre NoSQL Databases!</Subtitle>
       </Hero>
       <Projects offset={1}>
         <Title>Projects</Title>
