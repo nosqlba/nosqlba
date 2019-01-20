@@ -17,8 +17,6 @@ import Projects from '../views/Projects'
 import About from '../views/About'
 import Contact from '../views/Contact'
 
-import avatar from '../images/avatar.jpg'
-
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
@@ -100,21 +98,29 @@ const Index = () => (
         </ProjectsWrapper>
       </Projects>
       <About offset={3}>
-        <Title>About</Title>
+        <Title>Por que NoSQL?</Title>
         <AboutHero>
-          <Avatar src={avatar} alt="John Doe" />
           <AboutSub>
-            The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-            Emoji into my speech to better express myself. Winky face.
+            Os bancos de Dados NOSQL (not only SQL) foram criados, 
+            principalmente, para resolver problemas com aplicações web 
+            que precisam operar com gigantescas cargas de dados além de poder 
+            escalar com grande facilidade. 
+            Esses tipos de banco de dados vem sendo usados com 
+            muita frequência em redes sociais como Twitter, Facebook, 
+            além de persistência em aplicações nas nuvens.
           </AboutSub>
         </AboutHero>
-        <AboutDesc>
-          You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-          every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-          make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The kids
-          want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that all
-          right?
-        </AboutDesc>
+        <AboutHero>
+          <AboutSub>
+            Outro ponto importante a citar é a crescente adoção destas novas tecnologias, 
+            inclusive em mercados mais conservadores, 
+            tais como instituições financeiras e agências governamentais, 
+            seus motivos são diversos normalmente para solucionar problemas com flexibilidade, 
+            escalabilidade, latência e performance. 
+            Para demonstrar, 
+            compartilhar essas tecnologias foi criado o evento NOSQL-BA.
+          </AboutSub>
+        </AboutHero>
       </About>
       <Contact offset={4}>
         <Inner>
