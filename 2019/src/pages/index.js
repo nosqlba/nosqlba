@@ -65,8 +65,10 @@ const Index = () => (
         <Subtitle>Conferência baiana sobre NoSQL Databases!</Subtitle>
       </Hero>
       <Projects offset={1}>
-        <Title>Projects</Title>
-        <ProjectsWrapper>
+        <Title>Palestrantes</Title>
+        <Subtitle>Em breve mais informações!</Subtitle>
+
+        {/* <ProjectsWrapper>
           <ProjectCard
             title="Freiheit"
             link="https://www.behance.net/gallery/58937147/Freiheit"
@@ -95,7 +97,7 @@ const Index = () => (
           >
             A fantasy image manipulation relocating the habitat of wild animals.
           </ProjectCard>
-        </ProjectsWrapper>
+        </ProjectsWrapper> */}
       </Projects>
       <About offset={3}>
         <Title>Por que NoSQL?</Title>
