@@ -244,14 +244,9 @@
                                             <div class="item-carousel-palestrante-bio">
                                               <div class="item-carousel-palestrante-bio-overlay">
                                                 <div class="item-carousel-palestrante-bio-contexto">
-                                                  <p class="text-justify">Príncipe do Oceano; instrutor e desenvolvedor na (antiga) 
-                                                @triadworks. Hoje um @devscansados na Zup. 
-                                                Além disso, é coordenador do maior grupo de discussão JSF do Brasil (JavaSF) e 
-                                                do maior JUG do CE, a JavaCE. Possui +15 anos de experiência com desenvolvimento 
-                                                de software na plataforma Java e integração de sistemas. 
-                                                Também já palestrou em eventos importantes no Brazil, como
-                                                 QCONSP, CEJS, Agile Brasil, 
-                                                JavaCE Conference, entre outros.
+                                                  <p class="text-justify">Principe do Oceano, Marajá dos Legados e Rei das Gambiarras.
+
+                                                    Hoje um dev cansado na Zup tentando facilitar a vida de outros devs e times através da educação.  Com +15 anos de experiência em desenvolvimento de software acabou virando coordenador do maior grupo de discussão JSF do Brasil (JavaSF) e do maior JUG do Ceará (JavaCE). Nas horas vagas, um podcaster frustrado no @devscansados.
                                                   </p>
                                                 </div>
                                               </div>
@@ -416,9 +411,9 @@
                       <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
                         <div class="conf-programacao-palestra-bloco-palestrante-descricao">
                           <p class="text-justify">
-                            Um dos principais pilares para escalar uma aplicação web é o uso de fila de mensagens e processamento assíncrono, não à toa temos diversos brokers proprietários e open-source e serviços nas nuvens na qual nos permitem enfileirar eventos e mensagens a fim de processá-los no momento mais oportuno ou num ritmo que nossa aplicação consiga atender.
-        
-                                    Apesar deles escalarem muito bem, adota-los implica em adicionar um novo componente de software na arquitetura e delegar uma grande responsabilidade para o time de infraestrutura. Mas será que precisamos mesmo adotá-los? A verdade é que não, nem todos os sistemas precisam escalar ao ponto de assumir o risco na adoção de um broker. Por mais controverso que pareça, um banco de dados pode ser utilizado como uma fila de mensagens; todos os bancos populares possuem uma feature que permite o uso de filas de forma simples e eficiente: o SKIP LOCKED. Graças a ela conseguimos delegar todo o controle de locking e concorrência para o banco de dados, facilitando assim a implementação dos clientes (producers e consumers) das mensagens na fila. Com isso, obtemos um alto grau de performance e principalmente escalabilidade sem a necessidade de abrir mão do poder do banco de dados ou ter que adicionar um novo componente de software (como um JMS Broker) na arquitetura da solução.
+                            Um dos principais pilares para escalar uma aplicação web é o uso mensageria, não à toa temos diversos Brokers para enfileirar as mensagens a fim de processá-las num ritmo que nossa aplicação consiga atender.
+
+Mas será mesmo que precisamos adotar um Broker?  A verdade é que não; por mais controverso que pareça, podemos usar um banco de dados relacional como uma fila de mensagens, aproveitando sua natureza ACID e todo seu controle de locking e concorrência. Com isso, obtemos um alto grau de performance e principalmente escalabilidade sem a necessidade de abrir mão do poder de um banco de dados ou ter que adicionar um novo componente de software (como um JMS Broker) na arquitetura da solução.
               </p>
                                      </div>
                         <div class="conf-programacao-palestra-bloco-palestrante-nome">
