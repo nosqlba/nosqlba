@@ -1,0 +1,1156 @@
+
+
+<html lang="pt-br">
+  <head>
+     <!-- META TAGS -->
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <meta name="description" content="Conferência sobre as tecnolgoias em volta do NoSQL" />
+     <meta name="keywords" content="nosql, sql, rdms, sgbdr, banco de dados, database, not only sql, bahia, salvador, mongodb,
+        couchdb, cassandra, neo4j, hipertable, bigtable, mysql, oracle, postgres, web, internet, solution, solução, soluções,
+        solutions, app, webapp, application, applications, aplicativos, aplicativo, design, programação, programming,
+        desenvolvimento, development, develop, developer" />
+     <meta name="copyright" content="&copy; Copyleft NoSQL BA" />
+     <title>NoSQLBA - Conferência Baiana de NoSQL</title>
+     <!--Bootstrap -->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+     <!--FontAwesome Font Style -->
+     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+     <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+     <!-- owl carousel -->
+     <link href="assets/css/owl.carousel.css" rel="stylesheet">
+     <link href="assets/css/owl.theme.css" rel="stylesheet">
+     <!-- Nosso estilo personalizado -->
+     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+     <!-- FAVICON -->
+     <link rel="shortcut icon" href="assets/img/favicon.ico" />
+     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+     <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+     <![endif]-->
+  </head>
+  <style>
+     a:link {
+     color: #ff0000;
+     background-color: transparent;
+     text-decoration: none;
+     }
+     a:visited {
+     color: #ff0000;
+     background-color: transparent;
+     text-decoration: none;
+     }
+     a:hover {
+     color: #ff0000;
+     background-color: transparent;
+     text-decoration: underline;
+     }
+     a:active {
+     color: #ff0000;
+     background-color: transparent;
+     text-decoration: underline;
+     }
+  </style>
+  <body>
+     <!-- Navegação -->
+     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+     <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+           <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+           <li class="sidebar-brand">
+              <a href="#top" onclick=$( "#menu-close" ).click();></a>
+           </li>
+           <li>
+              <a href="#top" onclick=$( "#menu-close" ).click();>Home</a>
+           </li>
+           <li>
+            <a href="#inscricao" onclick=$( "#menu-close" ).click();>Inscrição</a>
+          </li>          
+           <li>
+              <a href="#palestrantes" onclick=$( "#menu-close" ).click();>Palestrantes</a>
+           </li>
+           <li>
+              <a href="#programacao" onclick=$( "#menu-close" ).click();>Programação</a>
+           </li>
+           <li>
+            <a href="#sobre" onclick=$( "#menu-close" ).click();>Sobre o evento</a>
+         </li>
+          
+           <!--li>
+              <a href="#localizacao" onclick=$( "#menu-close" ).click();>Localização</a>
+           </li-->
+        </ul>
+     </nav>
+     <!-- /Navegação -->
+     <!-- Header / Banner Principal -->
+     <header id="top" class="banner-principal">
+        <div class="container">
+           <div class="row">
+              <img src="assets/img/nosqlba-logo-full.png" class="img-responsive center-block banner-principal-img"
+                 alt="Logomarca do evento NoSQL BA">
+           </div>
+        </div>
+     </header>
+     <!-- /Header / Banner Principal -->
+     <!-- Mensagem de Boas Vindas -->
+     <div class="container">
+        <div class="row">
+           <div class="col-lg-12 text-center">
+            <br />  
+            <p class="lead text-justify">Bem vindo ao maior evento de NoSQL da Bahia! Esse ano, em sua segunda edição online que será
+                 feita via Youtube/Facebook/Linkedin! 
+              </p>
+              <p class="lead text-justify">Palestras de altíssima qualidade em apresentações de até 50 minutos.
+            </p>
+              <p class="lead text-justify">Continue lendo essa página para descobrir porque você não pode perder esse evento!</p>
+              <br />
+              <p class="lead">
+              <div class="container">
+                 <div class="row">
+                    <!--div class="col-lg-12 text-center">
+                       <p class="lead" style="color:red">Aberto c4p (Call4Papers)! Até 31/03/2021 </p>
+                       <p class="lead">
+                          <a target="_blank" class="btn btn-lg btn-dark" href="https://bit.ly/2ZVzRrt">Submeta sua palestra</a>
+                       </p>
+                    </div-->
+                 </div>
+              </div>
+              </p>
+           </div>
+        </div>
+     </div>
+     <div class="container">
+           <div class="row">
+            <div class="col-lg-12 text-center">
+              <br />
+              <h2 class="text-uppercase">Patrocinadores</h2>
+              <hr class="small">
+            </div>
+          </div>
+          <div class="row text-center">
+            <img src="assets/img/apoiadores/alura-dark-1060px.png" class="img-thumbnail logo" alt="UCSAL (Universidade Católica do Salvador)">
+            <img src="assets/img/apoiadores/cdc.png" class="img-thumbnail logo" alt="UCSAL (Universidade Católica do Salvador)">
+          
+          </div>
+        <div class="row text-center">
+           <div class="col-lg-12">
+              <br />
+              <h2 class="text-uppercase">Apoiadores</h2>
+              <hr class="small">
+           </div>
+        </div>
+        <div class="row text-center">
+           <img src="assets/img/apoiadores/logo-ucsal.png" class="img-thumbnail logo"
+              alt="UCSAL (Universidade Católica do Salvador)">
+           <img src="assets/img/apoiadores/globodotcom.png" class="img-thumbnail logo" alt="Globo.com">
+        </div>
+        <div class="row text-center">
+           <div class="col-lg-12">
+              <br />
+              <h2 class="text-uppercase">Organização</h2>
+              <hr class="small">
+           </div>
+        </div>
+        <div class="row text-center">
+           <img src="assets/img/apoiadores/python_ba.png" class="img-thumbnail logo" alt="Python BA">
+           <img src="assets/img/apoiadores/javabahia-logo.png" class="img-thumbnail logo" alt="Java Bahia">
+           <img src="assets/img/apoiadores/logo_infoucsal.jpg" class="img-thumbnail logo" alt="Info Ucsal">
+        </div>
+     </div>
+     <!-- Inscrição -->
+     <section id="inscricao" class="bg-primary">
+        <div class='container'>
+           <div class="row">
+              <h2 class="text-center text-uppercase pt-30">Inscrição</h2>
+              <hr class="small">
+           </div>
+           <div class='row'>
+              <div class="quadro-ingressos">
+                 <p class="lote"><span>Inscrições até o dia do evento 14/05 1h antes para quem quiser participar do sorteio de
+                    brindes</span>
+                 </p>
+                 <div class="col-sm-4 col-md-4">
+                    <div class="item">
+                       <h4>Palestras (Sexta-feira 09h as 18h) e sábado (09 as 18h)</h4>
+                       <p class="preco"><span>R$</span>0,00</p>
+                       <a target="_blank" class="btn btn-lg btn-dark"
+                          href="https://www.sympla.com.br/nosqlba-2021__1143906">Inscreva-se</a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        </div>
+     </section>
+     <!-- palestrantes -->
+     <section id="palestrantes" class="bg-primary">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-12 text-center">
+                 <br />
+                 <h2 class="text-uppercase">Palestrantes</h2>
+                 <hr class="small">
+              </div>
+              <div>
+                 <div class="container">
+                    <div id="id-owl-carousel" class="owl-carousel">
+                       <div class="item-carousel">
+                          <div class="item-carousel-palestrante-foto-pacote">
+                             <div class="item-carousel-foto">
+                                <img src="assets/img/palestrantes/milfont.jpeg" alt="Foto de perfil de Christiano Milfont" />
+                             </div>
+                             <div class="item-carousel-palestrante-bio">
+                                <div class="item-carousel-palestrante-bio-overlay">
+                                   <div class="item-carousel-palestrante-bio-contexto">
+                                      <p class="text-justify">Especialista em Produtos Digitais e consultor em
+                                         Transformação Digital com 20 anos de experiência em desenvolvimento de software,
+                                         construção e evolução de produtos e principalmente se especializando
+                                         na gestão e execução de transformações digitais.
+                                      </p>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="item-carousel-palestrante-dados">
+                             <h3 class="item-carousel-nome">Christiano Milfont</h3>
+                             <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                             <div class="redes-sociais">
+                                <a href="https://twitter.com/cmilfont" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/cmilfont/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://github.com/cmilfont" target="_blank"><i class="fa fa-github"></i></a>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/fabrizio.jpeg" alt="Foto de perfil de Fabrizio Mello" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify">Atualmente, como Especialista e Desenvolvedor PostgreSQL, ajudo pessoas e times a tirar máximo proveito do deste banco de dados relacional. 
+                                       Realizo trabalhos voluntários para Comunidade Brasileira de PostgreSQL (listas discussão, organização de eventos e administração). 
+                                       Também ajudo o PostgreSQL Global Development Group (PGDG) na implementação de algumas funcionalidades e revisão de patches (git.postgresql.org).
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Fabrizio Mello</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/fabriziomello" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/fabriziomello/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                              <a href="https://github.com/fabriziomello" target="_blank"><i class="fa fa-github"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/otavio.jpeg" alt="Foto de perfil de Otávio Santana" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify">Otavio Santana is a passionate software engineer focused on Java technology. 
+                                       Otavio is a member of both Expert Groups and Expert Leader in several JSRs and JCP executive committee. 
+                                       He is working on several Apache and Eclipse Foundation projects such as Apache Tamaya, Eclipse JNoSQL, Eclipse MicroProfile, JakartaEE. 
+                                       Otavio has received recognition for his OSS contributions such as the JCP Outstanding Award, Member of the year and innovative JSR, Duke’s Choice Award, and Java Champion Award, to name a few. 
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Otávio Santana</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/otaviojava" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/otaviojava/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                              <a href="https://github.com/otaviojava" target="_blank"><i class="fa fa-github"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/leandro.jpeg" alt="Foto de perfil de Leandro Domingues" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify">Microsoft Data Platform MVP, Embaixador e Evangelista MongoDB, Top 50 Neo4j Certified com grande experiência em manutenção de grandes volumes de dados e aplicações críticas, 
+                                       após vários anos trabalhando com bancos de dados relacionais, voltei minha carreira para bancos NoSQL nos últimos 6 anos.
+
+                                       Com toda a experiência acumulada em bancos de dados relacionais, hoje atuo ajudando pessoas e empresas a entrarem ou se manterem no universo de bancos NoSQL.
+                                    
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Leandro Domingues</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/delbussoweb" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/leandro-domingues/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                              <a href="https://github.com/delbussoweb" target="_blank"><i class="fa fa-github"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/vanessa.jpeg" alt="Foto de perfil de Vanessa Moura (Vanny)" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify">Almost 10 years working in the Information Technology industry where I started as a Help Desk associate when I was only 15 years old, 
+                                       then I became fascinated by the data world in 2012 when I decided to go to college in Brazil for my Database Management associate's degree. 
+                                       As a technology enthusiast, I was always happy and up for learning anything and everything I could to improve my skills and knowledge, 
+                                       not only doing the job I signed up for, but always offering help to my colleagues in distinct IT department areas when I saw the need, 
+                                       that helped me develop not only my technical skills but also my communication, especially now living in USA, since I learned English on my own.
+                                       On my free time I like to dedicate some part of it to study and to share this knowledge on my youtube channel, with 18k+ subscribers. 
+                                       And now I am developing my own educational platform to host my video classes and articles on Data and Database
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Vanessa Moura (Vanny)</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/WonderWanny" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/vannessamoura/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                              <a href="https://github.com/WonderWanny" target="_blank"><i class="fa fa-github"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/flavio.jpeg" alt="Foto de perfil de Flávio Omar Losada" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify">Bacharel em Ciência da Computação pela FURB, atualmente trabalho com Pesquisa Aplicada, pesquisando tecnologias e desenvolvendo protótipos e provas de conceito de produtos e funcionalidades para Senior Sistemas. 
+                                       Podcaster no podcast Taverna da Programação.
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Flávio Omar Losada</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/flavio_losada" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/folosada/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                              <a href="https://github.com/folosada" target="_blank"><i class="fa fa-github"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/julio.jpeg" alt="Foto de perfil de Julio Faerman" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify"> Working in technology is a great opportunity to improve our own life and the one of those around us. 
+                                       As a software engineer I can contribute to teams and missions I deeply care about, provide comfort to my family and keep a balanced life. 
+                                       I’ve built most of my experience working for global technology providers, including Amazon, Red Hat, Borland, as well as their customers and partners.
+                                       Regardless of background area or technical expertise, technology can help everyone get better work opportunities. 
+                                       The Caravana Cloud community, which I co-founded, helps developers improve their careers at each step. We support people in searching for opportunities, talking with recruiters, 
+                                       making through the interviews and becoming confident in ourselves and in our profession.
+                                       
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Julio Faerman</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/faermanj" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/faermanj/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                              <a href="https://github.com/faermanj" target="_blank"><i class="fa fa-github"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/raul.jpeg" alt="Foto de perfil de Raul Oliveira" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify">Desde 2016 trabalho focado em software open source, o que abriu um novo leque possibilidades, tanto de aprendizado profissional quanto no oferecimento de soluções.
+
+                                       A partir de 2012 comecei a trabalhar como DBA, onde atuei como DBA SQL Server, nesse período fiz diversos cursos e participei ativamente da comunidade técnica de SQL Server. Trabalhei como DBA DB2 LUW num ambiente desafiador, que abriu uma nova e ampla de opções e possibilidades como DBA multiplataforma. 
+                                       
+                                       Trabalho desde 2007 na área de TI onde tive a oportunidade de conviver por diversas áreas e objetivos. Trabalhei como instrutor, suporte nos níveis L1, L2 e L3, tanto para infraestrutura quanto para o negócio.
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Raul Oliveira</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/rauldoliveira" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/rauldoliveira/" target="_blank"><i class="fa fa-linkedin"></i></a>     
+                              <a href="https://github.com/rauldoliveira" target="_blank"><i class="fa fa-github"></i></a>                                 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/davy.jpeg" alt="Foto de perfil de Davy Machado" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify"> Professional with experience in Data Engineering, Database Administration and Data Governance. 
+                                       His expertise covers the administration and deployment of Big Data solutions in Apache Hadoop frameworks with NiFi, Flume, Sqoop, Pig, Hive, HBase, Spark, Kafka, Ambari, etc. 
+                                       He also has advanced knowledge in the administration of PostgreSQL, Oracle, Microsoft SQL Server databases. In the Data Governance, helps organizations to define and implement processes of data management based on 
+                                       international knowledge, like DAMA. 
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Davy Machado</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/davymachado" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/davy-alvarenga-machado/" target="_blank"><i class="fa fa-linkedin"></i></a>     
+                              <a href="https://github.com/davyam" target="_blank"><i class="fa fa-github"></i></a>                                 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/alberto.jpeg" alt="Foto de perfil de Alberto Marianno" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify">Software Developer 
+                                       Sou analista de Sistemas do SERPRO, Pai do Gui e da Marianna, Botafoguense, Judoka, aluno favorito de Elxa Dal, Nascido das brumas e co-fundador do @appmeubebe
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Alberto Marianno</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/a_marianno" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/alberto-marianno-santos-3662267/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/daniel.jpeg" alt="Foto de perfil de Daniel Domingues" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify"> Team Facilitator, Scrum Master and Systems Analyst with experience in software development and teams and system integration.
+                                       As developer I work with systems architecture, Natural/ADABAS, Java.
+                                       I like agile development, free technologies/free software and webstandards. 
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Daniel Domingues</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://www.linkedin.com/in/danielaraujodomingues/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                              <a href="https://github.com/dadomingues" target="_blank"><i class="fa fa-github"></i></a>                              
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/breno.jpeg" alt="Foto de perfil de Breno Ferreira" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify"> Desenvolvedor de Software na Globo.com, com +10 anos de experiencia em desenvolvimento com diferentes tecnologias como .NET, Python, JS, Go em diversos times no Brasil e no exterior. 
+                                       Atualmente trabalhando no time do CartolaFC.
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Breno Ferreira</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/breno_ferreira" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/brenoferreira/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                              <a href="https://github.com/brenoferreira" target="_blank"><i class="fa fa-github"></i></a>                              
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/alexandre.jpeg" alt="Foto de perfil de Alexandre Saboia" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify"> Bacharel em Informática pela PUC-Rio. 15 anos na globo.com. Full Stack Web Developer. 12 anos trabalhando em equipes ágeis
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Alexandre Saboia</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://twitter.com/alexandresaboia" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.linkedin.com/in/alexandresaboiafuziyama/" target="_blank"><i class="fa fa-linkedin"></i></a>        
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/luiz.jpeg" alt="Foto de perfil de Luiz Antônio Pereira da Silva" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify"> Desenvolvedor Java, com experiência em bancos relacionais como PostgreSQL, MySQL, Oracle e DB2 e conhecimento em outras soluções como MongoDb e Redis
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Luiz Antônio Pereira da Silva</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://www.linkedin.com/in/luiztoni/" target="_blank"><i class="fa fa-linkedin"></i></a>     
+                              <a href="https://github.com/luiztoni" target="_blank"><i class="fa fa-github"></i></a>                                 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/rodrigo.jpeg" alt="Foto de perfil de Rodrigo Nascimento" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify"> Engenheiro de Performance de Sistemas na NetApp, onde atua no design e implementação de banco de dados com o intuito de caracterizar o workload desses bancos de dados e medir sua performance nas diversas soluções oferecidas pela NetApp.
+
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Rodrigo Nascimento</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://www.linkedin.com/in/logwriter/" target="_blank"><i class="fa fa-linkedin"></i></a>     
+                              <a href="https://github.com/rodrigonascimento" target="_blank"><i class="fa fa-github"></i></a>                                 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item-carousel">
+                        <div class="item-carousel-palestrante-foto-pacote">
+                           <div class="item-carousel-foto">
+                              <img src="assets/img/palestrantes/bruno.jpeg" alt="Foto de perfil de Bruno Pereira" />
+                           </div>
+                           <div class="item-carousel-palestrante-bio">
+                              <div class="item-carousel-palestrante-bio-overlay">
+                                 <div class="item-carousel-palestrante-bio-contexto">
+                                    <p class="text-justify"> Tech Entrepreneur with strong tech and Product background, applying top notch Dev and Ops techniques to deliver solid business results. Passionate about creating value thru technology. 
+
+                                       Founded Rivendel, an IT company specialized in Digital Transformation through Lean/Agile Practices, DevOps and Data culture. We helped companies with Site Reliability Engineering, Continuous Delivery, Cloud and Data Analytics. Company sold to Mandic in January ‘18.
+                                       
+                                       Rivendel managed mission-critical Operations running thousands of Applications and handled all Operations and Security concerns along with Business Metrics monitoring. We differentiate ourselves from traditional companies by applying strong DevOps culture and automating the entire ALM & Ops lifecycle, "treating servers like cattle instead of pets".
+                                       
+                                       We're Lean/Agile practitioners for 10+ yrs and often guide companies through their Digital Transformation with a data-driven approach supported by Data Science/Big Data. Company with great traction, supporting over 200 clients in 5 yrs.
+                                       
+                                       Last 10 yrs I've worked a lot with Product Development in Startups and Enterprises, building high-performance multidisciplinar teams. Worked with 100+ startups and led innovation projects for some of the largest enterprises in Brazil, such as Natura, Itaú and CVC.
+                                       
+                                       CTO/IT Director @ Hotel Urbano for 1 year (via Rivendel). Building elite multidisciplinar teams working with Agile + Lean Startup + Data to deliver awesome products with first-class engineering practices. 
+                                       
+                                       Formerly responsible for building Concrete Solutions SP branch, driving it from 0 to R$ 3.5 Mi yearly revenue in 2 yrs, making it a profitable and efficient operation from scratch. Responsible for all pre-sales and operations duties, bringing and keeping strategic accounts such as Natura, Itau and Mercado Livre.
+                                       
+                                       Frequent Speaker in conferences/meetups. 
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="item-carousel-palestrante-dados">
+                           <h3 class="item-carousel-nome">Bruno Pereira</h3>
+                           <!-- <p class="item-carousel-empresa">Amazon</p> -->
+                           <div class="redes-sociais">
+                              <a href="https://www.linkedin.com/in/blpsilva/" target="_blank"><i class="fa fa-linkedin"></i></a>                           
+                           </div>
+                        </div>
+                     </div>
+                     
+                     
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <br />
+     </section>
+     <!-- /palestrantes -->
+     <!-- Programação -->
+     <section id="programacao" class="bg-primary">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-12 text-center">
+                 <h2 class="text-uppercase">Programação</h2>
+                 <hr class="small">
+                 <br />
+              </div>
+              <div class="col-lg-12 text-center">
+                 <br />
+                 <hr class="small">
+              </div>
+           </div>
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="conf-programacao">
+                 <div class="conf-programacao-tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+                       <li role="apresentacoes" class="active">
+                          <a href="#sexta" role="tab" data-toggle="tab">
+                          <span class="text-uppercase">sexta</span>14.05.2021</a>
+                       </li>
+                       <li role="apresentacoes">
+                          <a href="#sabado" role="tab" data-toggle="tab">
+                          <span class="text-uppercase">sábado</span>15.05.2021</a>
+                       </li>
+                    </ul>
+                 </div>
+                 <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="sexta">
+                      <div class="conf-programacao-palestra-bloco">
+                        <div class="conf-programacao-palestra-horario">
+                           <h6>08:40-08:55</h6>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante">
+                           <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                              <h5>Abertura evento dia 1</h5>
+                              <i class="fa fa-angle-down"></i>
+                           </div>
+                           <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                              <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                 <p class="text-justify">Bem vindos ao NoSQLBA 2021
+                                 </p>
+                              </div>
+                              <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                 <span class="text-right">Ivan Queiroz e Osvaldo Requião</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>09:00-10:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>NoSQL + SQL = PostgreSQL</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">Nesta apresentação veremos um pouco das capacidades NoSQL do PostgreSQL por oferecer suporte nativo a JSON/JSONB, HStore (chave/valor), XML, oferecendo excelente indexação e otimização no armazenamento, e atendendo aos requisitos ACID, portanto tendo o melhor dos dois mundos. Sem contar o alto poder de extensibilidade que oferece pela possibilidade de escrever novos tipos de dados, mecanismos de indexação, linguagens procedurais, adaptadores de fontes de dados externas (SQL/MED), entre outras diversas características excelentes.
+                                   </p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">Fabrízio de Royes Mello</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>10:00-10:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>Como modelar dados no DynamoDB?</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">Modelar dados no banco NoSQL AWS DynamoDB nem sempre é uma tarefa fácil, principalmente para quem tem background com bancos de dados relacionais. 
+                                      Com esta palestra, vou demonstrar uma das maneiras de pensar a modelagem da sua aplicação para utilizar DynamoDB sem sofrimento. 
+                                   </p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">Flávio Omar Losada</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>11:00-11:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>Uso de NoSQL em um ambiente do serviço público (SERPRO)</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">Nessa talk vamos falar sobre os cases com bancos NoSQL dentro do Governo Federal. 
+                                      Em uma empresa do tamanho do Serpro, que lida com dados de todos os brasileiros, não existem aplicações pequenas. 
+                                      Desde uma solução de gamificação projetada para atender milhares de colaboradores, a sistemas que lidam com 270 milhões de infrações de trânsito, as aplicações desenvolvidas e
+                                       mantidas pela empresa tem de ser cada vez mais escaláveis, mais resilientes e lidar com um volume de dados que cresce a cada dia. Essas aplicações clamam por soluções NoSQL.</p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">Alberto Mariano e Daniel Domingues</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>14:00-14:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                           <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                              <h5>Modelagem de Dados com MongoDB: Design Patterns </h5>
+                              <i class="fa fa-angle-down"></i>
+                           </div>
+                           <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                              <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                 <p class="text-justify">A modelagem de dados é um dos fatores determinantes na performance do seu banco de dados. Nesta apresentação vamos falar sobre a diferença de modelar um banco de dados NoSQL vs. um banco de dados relacional, e para que ninguém tenha que reinventar a roda, vamos conversar sobre design patterns.
+                                 </p>
+                              </div>
+                              <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                 <span class="text-right">Rodrigo Nascimento</span>
+                              </div>
+                           </div>
+                        </div>                         
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>15:00-15:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                           <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                              <h5>Apache Cassandra: Escalabilidade horizontal para aplicações Java</h5>
+                              <i class="fa fa-angle-down"></i>
+                           </div>
+                           <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                              <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                 <p class="text-justify">No concorrido mundo da tecnologia, melhorias de milissegundos em performance podem fazer toda a diferença para seus clientes. 
+                                    Dessa necessidade, surgiram diversos paradigmas e frameworks, exigindo paralelamente um bom e rápido desempenho na persistência da informação. 
+                                    Neste cenário nasceu o Apache Cassandra, o banco de dados NoSQL, elástico, tolerante a falhas e com um alto grau de performance. 
+                                    O Cassandra é um banco de dados não relacional originado pelo Facebook, e hoje é um 
+                                    projeto open source dentro da Apache Foundation com cases de sucessos nas maiores empresas do mundo, como o Netflix, GitHub, eBay, dentre outros.
+                                    Nessa palestra será abordado os conceitos do Cassandra, dicas, ferramentas e desafios para se trabalhar com esse banco de dados.
+                                 </p>
+                              </div>
+                              <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                 <span class="text-right">Otavio Santana</span>
+                              </div>
+                           </div>
+                        </div>                          
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>16:00-16:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>Teradata Database</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">Teradata é um sistema de gerenciamento de banco de dados relacional que é projetado para cargas massivas de dados com a capacidade de ter bancos de dados com centenas de terabytes de dados em tamanho. 
+                                      Esta característica torna o Teradata atrativo para grandes empresas que precisam de uma solução de alta escalabilidade para que seus sistemas permaneçam intactos; no entanto, 
+                                      o sistema Teradata pode também ser tão pequeno quanto 100 gigabytes. 
+                                      Vamos falar sobre arquitetura do Teradata e porque é uma solução importante no mercado
+                                   </p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">Vanessa Moura (Vanny Script)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>17:00-17:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>Os desafios do Cartola FC</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">Venha conhecer os desafios de escalabilidade do Cartola FC. Conhecer o histórico de um produto de mais de 15 anos de história, e como que hoje conseguimos suportar 100K requests/segundo nos momentos de demanda mais intensa. Iremos falar sobre as tecnologias usadas no backend com bancos de dados relacionais e não relacionais para cache e busca, tecnologias de infraestrutura como Nginx e Tsuru, e como que construímos o frontend do web e mobile e seus desafios inerentes à nossa arquitetura.
+                                   </p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">Breno Ferreira e Alexandre Saboia (Globo.com)</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                        <div class="conf-programacao-palestra-horario">
+                           <h6>17:50-18:00</h6>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante">
+                           <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                              <h5>Encerramento do dia</h5>
+                              <i class="fa fa-angle-down"></i>
+                           </div>
+                        </div>
+                     </div>
+                    </div>    
+                    <div role="tabpanel" class="tab-pane" id="sabado">
+                      <div class="conf-programacao-palestra-bloco">
+                        <div class="conf-programacao-palestra-horario">
+                           <h6>08:40-08:55</h6>
+                        </div>
+                        <div class="conf-programacao-palestra-bloco-palestrante">
+                           <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                              <h5>Abertura evento dia 2</h5>
+                              <i class="fa fa-angle-down"></i>
+                           </div>
+                           <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                              <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                 <p class="text-justify">Bem vindo ao NoSQLBA
+                                 </p>
+                              </div>
+                              <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                 <span class="text-right">Ivan Queiroz e Osvaldo Requião</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>09:00-10:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>Redis, do Zero aos Primeiros Passos</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">Redis é um sistema usado como cache distribuído, suporta banco de dados em memória e em disco e ainda possui soluções pra mensageria. Nessa palestra será apresentado os principais recursos para o uso produtivo dessa ferramenta.
+                                   </p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">Luiz Antônio Pereira da Silva</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>10:00-10:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>Usando Dados e Observabilidade para ter Sucesso em Produção</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">Para ter sucesso com Produtos Digitais, a confiabilidade é um dos aspectos cruciais. 
+                                      Vamos falar sobre como usar diferentes tipos de dados e abordagens de monitoramento para chegar na maturidade com Observabilidade e ter um Produto que não decepciona seus clientes.
+                                   </p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">Christiano Milfont e Bruno Pereira</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>11:00-11:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>MongoDB</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">A definir</p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">Leandro Domingues</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>14:00-14:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>Privacidade e Anonimização: Atendendo a LGPD e outras regulamentações.</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">  As regulamentações de privacidade de dados, como a LGPD e a GDPR, buscam assegurar o direito à privacidade dos cidadãos, e as consequências para quem o viole. 
+                                      Sendo regulamentações gerais, suas regras valem para todas as empresas e meios, impactando todos nossos sistemas e bancos de dados. 
+                                      Garantir a privacidade dos clientes é uma questão complexa, que vai além da criptografia e controle de acesso. 
+                                      Testar e depurar sistemas muitas vezes requer que os engenheiros tenham acesso aos dados reais, para reproduzir defeitos e criar soluções eficientes.
+                                    Sendo assim, em muitos projetos os dados são “anonimizados” antes que os desenvolvedores tenham acesso. 
+                                    Isso significa substituir os dados reais por dados fictícios, como “Fulano de Tal” com telefone “5555-55555”. 
+                                    Entretanto, estes dados precisam manter a validade, consistência e outras propriedades para que os testes sejam realísticos. 
+                                    Venha aprender como projetar e automatizar a anonimização de seus dados, relacionais ou não!
+                                   </p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">Julio Faeman</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>15:00-15:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>Diversidade NoSQL na Apache</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">Como que a Apache Software Foundation pode colaborar com seu ambiente de dados
+                                   </p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">Raul Oliveira e Davy Machado</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="conf-programacao-palestra-bloco">
+                          <div class="conf-programacao-palestra-horario">
+                             <h6>16:00-16:50</h6>
+                          </div>
+                          <div class="conf-programacao-palestra-bloco-palestrante">
+                             <div class="conf-programacao-palestra-bloco-palestrante-titulo">
+                                <h5>Mesa Redonda e Encerramento do evento</h5>
+                                <i class="fa fa-angle-down"></i>
+                             </div>
+                             <div class="conf-programacao-palestra-bloco-palestrante-descricao-esqueleto">
+                                <div class="conf-programacao-palestra-bloco-palestrante-descricao">
+                                   <p class="text-justify">A definir
+                                   </p>
+                                </div>
+                                <div class="conf-programacao-palestra-bloco-palestrante-nome">
+                                   <span class="text-right">A definir</span>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>                    
+                 </div>
+                 <br />
+              </div>
+           </div>
+        </div>
+        <br />
+     </section>
+     <!-- /Programação -->
+     <!-- /Mensagem de Boas Vindas -->
+     <!-- Sobre -->
+     <section id="sobre" class="bg-primary">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-12 text-center">
+                 <br />
+                 <h2 class="text-uppercase">Por que NoSQL?</h2>
+                 <hr class="small">
+                 <p class="lead text-justify">
+                    Os bancos de Dados NOSQL (not only SQL) foram criados, principalmente, para resolver problemas com
+                    aplicações web que precisam
+                    operar com gigantescas cargas de dados além de poder escalar com grande facilidade. Esses tipos de banco de
+                    dados
+                    vem sendo usados com muita frequência em redes sociais como Twitter, Facebook, além de persistência em
+                    aplicações
+                    nas nuvens. Outro ponto importante a citar é a crescente adoção destas novas tecnologias, inclusive em
+                    mercados
+                    mais conservadores, tais como instituições financeiras e agências governamentais, seus motivos são diversos
+                    normalmente
+                    para solucionar problemas com flexibilidade, escalabilidade, latência e performance. Para demonstrar,
+                    compartilhar
+                    essas tecnologias foi criado o evento NOSQL-BA.
+                 </p>
+              </div>
+           </div>
+           <hr class="small">
+           <div class="row">
+              <div class="col-md-3 col-sm-6">
+                 <div class="service-item text-center">
+                    <h4>
+                       <strong>Mercado</strong>
+                    </h4>
+                    <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-bar-chart fa-stack-1x text-primary"></i>
+                    </span>
+                    <p class="text-justify">Os bancos NoSQL está crescendo cada vez mais ao redor do mundo, diversas empresas
+                       vem utilizando essa tecnologia.
+                    </p>
+                 </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                 <div class="service-item text-center">
+                    <h4>
+                       <strong>Networking</strong>
+                    </h4>
+                    <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-users fa-stack-1x text-primary"></i>
+                    </span>
+                    <p class="text-justify">Compartilhe conhecimento e experiência no assunto, além de conhecer palestrantes com
+                       referência internacional.
+                    </p>
+                 </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                 <div class="service-item text-center">
+                    <h4>
+                       <strong>Vagas</strong>
+                    </h4>
+                    <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-rocket fa-stack-1x text-primary"></i>
+                    </span>
+                    <p class="text-justify">O evento focado em NoSQL visando também a comunicação e a interação, com minicurso e
+                       palestras com profissionais
+                       com experiência na tecnologia com referência internacional.
+                    </p>
+                 </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                 <div class="service-item text-center">
+                    <h4>
+                       <strong>Participantes</strong>
+                    </h4>
+                    <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-bullhorn fa-stack-1x text-primary"></i>
+                    </span>
+                    <p class="text-justify">O evento será focado em desenvolvedores, gestores, entusiastas que tenham interesse
+                       em falar de NoSQL.
+                    </p>
+                 </div>
+              </div>
+           </div>
+        </div>
+        </div>
+        <br />
+     </section>
+     <!-- /Sobre -->
+     <!-- Mensagem de chamada para compra de ingresso -->
+     <div class="criar-bloco-entre-sessoes">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-12 text-center">
+                 <h2>Queremos contar com seu apoio para que possamos trazer uma experiência única para os participantes do
+                    NoSQL BA
+                 </h2>
+                 <br />
+                 <a href="mailto:antonio.lazaro@gmail.com" class="btn btn-lg btn-dark">Seja nosso parceiro!</a>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- /Mensagem de chamada para compra de ingresso -->
+     <!-- SOMENTE ESPAÇO EM BRANCO -->
+    
+     <!-- /SOMENTE ESPAÇO EM BRANCO -->
+     <!-- Mensagem de chamada para compra de ingresso -->
+     <!-- /Mensagem de chamada para compra de ingresso -->
+     <!-- /Ingressos -->
+     <!-- Mapa com localização 
+        <section id="localizacao" class="mapa">
+          <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3985020538394!2d-38.41597278517842!3d-12.94633289087241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e9ec1bfe72412b2!2sCatholic+University+of+Salvador+-+UCSAL!5e0!3m2!1sen!2sbr!4v1514479069129" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <br />
+          <small>
+           <a href="https://goo.gl/maps/ZT2VuHJPEvr" target="_blank">Detalhar localização</a>
+         </small>
+        </section-->
+     <!-- /Mapa com localização -->
+     <!-- Footer -->
+     <footer>
+        <div class="container">
+           <div class="row">
+              <hr>
+              <div class="col-lg-10 col-lg-offset-1 text-center">
+                 <p class="text-muted">Feito com
+                    <span style="color: red" class=" fa fa-heart"></span> por
+                    <a href="https://twitter.com/mmalaquias1" target="_blank">Mateus Malaquias</a>
+                 </p>
+                 <br />
+              </div>
+           </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+     </footer>
+     <!-- /Footer -->
+     <!-- jQuery -->
+     <script src="assets/js/jquery.js"></script>
+     <!-- Bootstrap Core -->
+     <script src="assets/js/bootstrap.min.js"></script>
+     <!-- Owl Caroulsel -->
+     <script src="assets/js/owl.carousel.js"></script>
+     <!-- Nosso arquivo JS personalizado -->
+     <script src="assets/js/main.js"></script>
+  </body>
+</html>
